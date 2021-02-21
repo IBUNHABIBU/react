@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### error when run npm start
+`NPM start returns error, “There might be a problem with the project dependency tree”`
+to solve this error I followed the following steps
+
+`npm cache clean --force`
+
+delete node_modules folder
+
+delete package-lock.json file
+
+then
+create a .env at the root of the folder of react folder
+
+type SKIP_PREFLIGHT_CHECK=true in side .env file
+
+`npm install`
+
+now run in cmd npm start
