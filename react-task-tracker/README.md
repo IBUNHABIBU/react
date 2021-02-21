@@ -75,12 +75,12 @@ to solve this error I followed the following steps
 
 `npm cache clean --force`
 
-delete node_modules folder
+delete `node_modules` folder
 
-delete package-lock.json file
+delete `package-lock.json` file
 
 then
-create a .env at the root of the folder of react folder
+create a `.env` at the root of the folder of react folder
 
 type SKIP_PREFLIGHT_CHECK=true in side .env file
 
