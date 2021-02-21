@@ -87,3 +87,6 @@ type SKIP_PREFLIGHT_CHECK=true in side .env file
 `npm install`
 
 now run in cmd npm start
+
+# react extension 
+type `rafce`
