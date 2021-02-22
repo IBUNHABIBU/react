@@ -3,7 +3,7 @@ function App() {
   const name = "Juma"
   return (
     <div className="container">
-      <Header />
+      <h1 style = { { color: 'red', backgroundColor:'blue'}}></h1>
     </div>
   );
 }
