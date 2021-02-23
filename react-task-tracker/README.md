@@ -88,5 +88,5 @@ type SKIP_PREFLIGHT_CHECK=true in side .env file
 
 now run in cmd npm start
 
-# react extension 
+# react extension (VS Code ES7 React/Redux/React-Native/JS snippets)
 type `rafce`
