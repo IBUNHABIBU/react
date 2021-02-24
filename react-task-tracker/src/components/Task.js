@@ -20,8 +20,8 @@ const tasks = [
   },
   {
     id:4,
-    text: 'Doctors Appointment',
-    day: "Feb 5th at 2:30pm",
+    text: 'Food shopping',
+    day: "Feb 16th at 21:30pm",
     remainder: true,
  },
 
