@@ -13,16 +13,16 @@ const tasks = [
     remainder: true,
   },
   {
-      id:1,
-      text: 'Eating Ugali',
-      day: "March 5th at 2:30pm",
-      remainder: true,
+    id:3,
+    text: 'Eating Ugali',
+    day: "March 5th at 2:30pm",
+    remainder: true,
   },
   {
-        id:1,
-        text: 'Doctors Appointment',
-        day: "Feb 5th at 2:30pm",
-        remainder: true,
+    id:4,
+    text: 'Doctors Appointment',
+    day: "Feb 5th at 2:30pm",
+    remainder: true,
  },
 
 ]
