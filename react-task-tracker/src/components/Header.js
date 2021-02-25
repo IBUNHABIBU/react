@@ -8,7 +8,6 @@ const Header = ({title}) => {
       <Button color='green' text='submit' />
       <Button   color='blue' text='Add' />
       <Button color='red' text='cancel' />
-      <Button color='black' text='register' />
     </header>
   )
 }
