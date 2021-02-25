@@ -30,7 +30,7 @@ function Task() {
   return (
     <>
       { 
-      tasks.map( (task) => ( <h1>{task.text}</h1> )
+      tasks.map( (task) => ( <h3 key = { task.id }>{task.text}</h3> )
       )
       }
     </>
