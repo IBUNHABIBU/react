@@ -90,3 +90,6 @@ now run in cmd npm start
 
 # react extension (VS Code ES7 React/Redux/React-Native/JS snippets)
 type `rafce`
+
+Date: 27 Feb 2021
+Video end: 56h03s
