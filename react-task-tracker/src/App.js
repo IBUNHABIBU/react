@@ -7,25 +7,25 @@ function App() {
     id:1,
     text: 'Doctors Appointment',
     day: "Feb 5th at 2:30pm",
-    remainder: true,
+    reminder: true,
     },
     {
       id:2,
       text: 'Playing golf',
       day: "Feb 21 at 10:00",
-      remainder: true,
+      reminder: true,
     },
     {
       id:3,
       text: 'Eating Ugali',
       day: "March 5th at 2:30pm",
-      remainder: true,
+      reminder: true,
     },
     {
       id:4,
       text: 'Food shopping',
       day: "Feb 16th at 21:30pm",
-      remainder: true,
+      reminder: true,
    },
   ])
 
@@ -34,7 +34,7 @@ function App() {
   }
 
   const toggleReminder = (id) => {
-    console.log(id);
+    setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !task.reminder} : task))
   }
   return (
     <div className="container">
