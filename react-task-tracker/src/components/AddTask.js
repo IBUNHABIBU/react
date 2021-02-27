@@ -14,8 +14,8 @@ function AddTask() {
       </div>
 
       <div className="form-control">
-        <label htmlFor="">Task </label>
-        <input type="text" name="" id="" placeholder= 'Add Task'/>
+        <label htmlFor="">Set reminder </label>
+        <input type="checkbox" name="" id="" />
       </div>
     </form>
   )
