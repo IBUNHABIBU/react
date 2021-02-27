@@ -21,7 +21,7 @@ function AddTask() {
       <div className="form-control form-control-check">
         <label htmlFor="">Set reminder </label>
         <input type="checkbox" name="" id="" value= {reminder} 
-        onChange = { (e) => setReminder(e.target.value) }/>
+        onChange = { (e) => setReminder(e.currentTarget.checked) }/>
       </div>
       <input className = "btn btn-block" type="submit" value="Save Task"/>
     </form>
