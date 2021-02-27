@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import { AddTask } from "./components/AddTask";
 import { useState } from 'react';
 function App() {
   const [tasks, setTasks] = useState([

@@ -17,6 +17,7 @@ function AddTask() {
         <label htmlFor="">Set reminder </label>
         <input type="checkbox" name="" id="" />
       </div>
+      <input type="submit" value="Save Task"/>
     </form>
   )
 }
