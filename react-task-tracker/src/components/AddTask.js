@@ -13,6 +13,8 @@ function AddTask({ onAdd }) {
     }
     onAdd({text, day, reminder})
     setText();
+    setDay();
+    setReminder(false)
   }
   return (
     <form className='add-form' onSubmit = { onSubmit }>
@@ -31,6 +33,7 @@ function AddTask({ onAdd }) {
       <div className="form-control form-control-check">
         <label htmlFor="">Set reminder </label>
         <input type="checkbox" name="" id="" value= {reminder} 
+        checked = { reminder }
         onChange = { (e) => setReminder(e.currentTarget.checked) }/>
       </div>
       <input className = "btn btn-block" type="submit" value="Save Task"/>
