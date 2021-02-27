@@ -13,11 +13,11 @@ function AddTask() {
         <input type="text" name="" id="" placeholder= 'Add Day and Time'/>
       </div>
 
-      <div className="form-control">
+      <div className="form-control form-control-check">
         <label htmlFor="">Set reminder </label>
         <input type="checkbox" name="" id="" />
       </div>
-      <input type="submit" value="Save Task"/>
+      <input className = "btn btn-block" type="submit" value="Save Task"/>
     </form>
   )
 }
