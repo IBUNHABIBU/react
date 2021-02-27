@@ -3,12 +3,13 @@ import { useState } from 'react';
 function AddTask() {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
-  const [reminder, setReminder] = useState('');
+  const [reminder, setReminder] = useState('false');
   return (
     <form className='add-form'>
       <div className="form-control">
         <label htmlFor="">Task </label>
-        <input type="text" name="" id="" placeholder= 'Add Task'/>
+        <input type="text" name="" id="" placeholder= 'Add Task' value= {text} 
+        onChange = { (e) => setText(e.target.value) }/>
       </div>
       
       <div className="form-control">
