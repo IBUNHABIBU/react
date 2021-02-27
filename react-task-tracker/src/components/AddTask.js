@@ -14,7 +14,8 @@ function AddTask() {
       
       <div className="form-control">
         <label htmlFor="">Day and time </label>
-        <input type="text" name="" id="" placeholder= 'Add Day and Time'/>
+        <input type="text" name="" id="" placeholder= 'Add Day and Time' value= {day} 
+        onChange = { (e) => setDay(e.target.value) }/>
       </div>
 
       <div className="form-control form-control-check">
