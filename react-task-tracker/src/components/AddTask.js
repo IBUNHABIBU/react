@@ -7,6 +7,12 @@ function AddTask({ onAdd }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    if(!text){
+      alert('Please add task')
+      return;
+    }
+    onAdd({text, day, reminder})
+    setText();
   }
   return (
     <form className='add-form' onSubmit = { onSubmit }>
