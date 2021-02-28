@@ -3,6 +3,8 @@ import Tasks from './components/Tasks'
 import  AddTask  from "./components/AddTask";
 import { useState } from 'react';
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
+  
   const [tasks, setTasks] = useState([
     {
     id:1,
