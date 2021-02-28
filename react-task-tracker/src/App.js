@@ -40,7 +40,7 @@ function App() {
   const addTask = (task) => {
    const id = Math.floor(Math.random()*1000) + 1;
    const newTask = { id, ...task};
-   setTasks(...tasks, newTask)
+   setTasks([...tasks, newTask])
   }
   return (
     <div className="container">
