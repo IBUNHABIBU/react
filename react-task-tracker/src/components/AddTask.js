@@ -3,7 +3,7 @@ import { useState } from 'react';
 function AddTask({ onAdd }) {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
-  const [reminder, setReminder] = useState('false');
+  const [reminder, setReminder] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
