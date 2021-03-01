@@ -110,3 +110,5 @@ Installing the http server
 
 `npm install -g serve -s build`
 `serve -s build`
+
+Installing json server 
