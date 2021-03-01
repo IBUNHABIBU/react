@@ -108,3 +108,4 @@ Installing the http server
 
 `npm run build`
 
+`npm install -g serve -s build`
