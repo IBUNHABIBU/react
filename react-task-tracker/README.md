@@ -115,3 +115,5 @@ Installing the http server
 Installing json server 
 
 `npm i json-server`
+
+Video end: 01h24m08s
