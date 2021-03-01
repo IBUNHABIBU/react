@@ -10,7 +10,7 @@ const Header = ({title, onAdd, showAdd }) => {
         color = { showAdd ? 'red':'green'}
         text= { showAdd ? 'Close': 'Add' }
          onClick = { onAdd }/>
-      <Button color='red' text='cancel' />
+      {/* <Button color='red' text='cancel' /> */}
     </header>
   )
 }
