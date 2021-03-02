@@ -47,7 +47,7 @@ function App() {
       },
       body: JSON.stringify(task)
     })
-    const data = res.json();
+    const data = await res.json();
     setTasks([...tasks, data])
   }
   return (
