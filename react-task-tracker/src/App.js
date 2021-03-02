@@ -7,8 +7,11 @@ function App() {
   const [tasks, setTasks] = useState([])
 
  useEffect(() => {
-   
-    fetchTask();
+   const getTasks = async () => {
+     const taskFromServer = await fetchTask();
+     setTasks(taskFromServer);
+   }
+    getTasks();
   }, [] )
 
   const fetchTask = async () => {
@@ -21,7 +24,7 @@ function App() {
     // });
     return data
   }
-  
+
   const deleteTask = id => {
     setTasks(tasks.filter(task => task.id !== id))
   }
