@@ -44,7 +44,8 @@ function App() {
       method: 'POST',
       headers: {
         "Content-type": 'application/json'
-      }
+      },
+      body: JSON.stringify(task)
     })
   }
   return (
