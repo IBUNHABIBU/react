@@ -7,7 +7,9 @@ function App() {
   const [tasks, setTasks] = useState([])
 
   const useEffect = () => {
-    
+    const fetchTask = () => async () => {
+      const res = await 
+    }
   }
 
   const deleteTask = id => {
