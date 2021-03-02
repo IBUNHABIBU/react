@@ -20,9 +20,9 @@
       },
       {
         "id":4,
-        "text": 'Food shopping',
+        "text": "Food shopping",
         "day": "Feb 16th at 21:30pm",
-        "reminder": true,
-     },
+        "reminder": true
+     }
    ]
 }
