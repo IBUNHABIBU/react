@@ -6,11 +6,14 @@ function App() {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([])
 
-  const useEffect = () => {
+ useEffect(() => {
     const fetchTask = () => async () => {
-      const res = await 
+      const res = await fetch('http://localhost:5000/tasks');
+      const data = await res.json();
+      console.log(data);
     }
-  }
+    fetchTask();
+  }, [] )
 
   const deleteTask = id => {
     setTasks(tasks.filter(task => task.id !== id))
