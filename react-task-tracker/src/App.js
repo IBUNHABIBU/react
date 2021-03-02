@@ -37,9 +37,9 @@ function App() {
     setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !task.reminder} : task))
   }
   const addTask = (task) => {
-   const id = Math.floor(Math.random()*1000) + 1;
-   const newTask = { id, ...task};
-   setTasks([...tasks, newTask])
+  //  const id = Math.floor(Math.random()*1000) + 1;
+  //  const newTask = { id, ...task};
+  //  setTasks([...tasks, newTask])
   }
   return (
     <div className="container">
