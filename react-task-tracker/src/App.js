@@ -11,10 +11,10 @@ function App() {
       const res = await fetch('http://localhost:5000/tasks');
       const data = await res.json();
       // console.log(data);
-      data.forEach(element => {
-        console.log(element.id)
-        console.log(element.text)
-      });
+      // data.forEach(element => {
+      //   console.log(element.id)
+      //   console.log(element.text)
+      // });
     }
     fetchTask();
   }, [] )
