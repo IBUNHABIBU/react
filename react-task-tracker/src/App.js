@@ -47,6 +47,8 @@ function App() {
       },
       body: JSON.stringify(task)
     })
+    const data = res.json();
+    setTasks([...tasks, data])
   }
   return (
     <div className="container">
