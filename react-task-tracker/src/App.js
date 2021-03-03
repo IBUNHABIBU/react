@@ -25,6 +25,17 @@ function App() {
     return data
   }
 
+  const fetchTask = async () => {
+    const res = await fetch('http://localhost:5000/tasks');
+    const data = await res.json();
+    // console.log(data);
+    // data.forEach(element => {
+    //   console.log(element.id)
+    //   console.log(element.text)
+    // });
+    return data
+  }
+
   const deleteTask = async id => {
     await fetch(`http://localhost:5000/tasks/${id}`
     ,{
