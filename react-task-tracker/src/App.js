@@ -44,7 +44,9 @@ function App() {
     setTasks(tasks.filter(task => task.id !== id))
   }
 
-  const toggleReminder = (id) => {
+  const toggleReminder = async (id) => {
+    const taskToToggle = await fetchTask(id);
+    cont updateTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
     setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !task.reminder} : task))
   }
   const addTask = async (task) => {
