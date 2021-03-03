@@ -46,7 +46,7 @@ function App() {
 
   const toggleReminder = async (id) => {
     const taskToToggle = await fetchTask(id);
-    cont updateTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
+    const updateTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
     const res = await fetch(`http://localhost:5000/tasks/${id}`, {
       method:'PUT',
       headers: {
@@ -55,7 +55,7 @@ function App() {
       body: JSON.stringify(updateTask)
     })
     const data = await res.json();
-    setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !task.reminder} : task))
+    setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !data.reminder} : task))
   }
   const addTask = async (task) => {
   //  const id = Math.floor(Math.random()*1000) + 1;
