@@ -52,8 +52,9 @@ function App() {
       headers: {
         'Content-type': 'application/json',
       },
-      
+      body: JSON.stringify(updateTask)
     })
+    const data = await res.json();
     setTasks(tasks.map(task => task.id === id ? { ...task, reminder: !task.reminder} : task))
   }
   const addTask = async (task) => {
