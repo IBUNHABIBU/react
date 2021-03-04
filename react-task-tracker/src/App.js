@@ -83,7 +83,9 @@ function App() {
       <Tasks tasks = { tasks } onDelete = { deleteTask } onToggle = { toggleReminder} />
       ):("No task to show"
       )}
-    <Footer></Footer>
+      <Route path = '/about' component= { About }/>
+    <Footer/>
+
     </div>
     </Router>
   );
