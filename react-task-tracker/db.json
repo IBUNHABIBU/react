@@ -5,6 +5,23 @@
       "day": "line kwa nini",
       "reminder": false,
       "id": 2
+    },
+    {
+      "text": "Juma makota",
+      "day": "Hello",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Juma makota go back",
+      "day": "Hello reload",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": " go back",
+      "reminder": false,
+      "id": 5
     }
   ]
 }
