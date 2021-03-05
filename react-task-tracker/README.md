@@ -136,3 +136,4 @@ Video end: 01h24m08s
 
 *********************************************************************************
 > Date 5 March
+> Finished the whole react tutorial
