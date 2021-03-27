@@ -5,16 +5,16 @@ import React, { Component } from "react";
 import Board from "./components/Board";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-   
-  }
-
-  
   render() {
     return (
-      <div>
-       <Board />
+      <div className="game">
+        <div className="game-board">
+          <Board />
+        </div>
+        <div className="game-info">
+          <div>{/* status */}</div>
+          <ol>{/* TODO */}</ol>
+        </div>
       </div>
     );
   }
