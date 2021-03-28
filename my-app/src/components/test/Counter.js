@@ -29,5 +29,8 @@ export default class Counter extends Component {
             </div>
         )
     }
+    componentDidUpdate(){
+        console.log("component Did Update")
+    }
 }
 
