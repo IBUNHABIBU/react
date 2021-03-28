@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
-export class Counter extends Component {
-    static propTypes = {
-        prop: PropTypes
+export default class Counter extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             
+        }
     }
-
+    
     render() {
         return (
             <div>
@@ -16,12 +18,3 @@ export class Counter extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    
-})
-
-const mapDispatchToProps = {
-    
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
