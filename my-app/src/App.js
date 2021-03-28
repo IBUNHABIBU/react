@@ -13,7 +13,7 @@ class App extends Component {
        mount: true
     }
     this.mountCounter = () => this.setState({ mount: true })
-    this.unmountCounter = () => this.setState({ mount: false })
+    this.unMountCounter = () => this.setState({ mount: false })
   }
   
   render() {
@@ -32,7 +32,7 @@ class App extends Component {
      <br />
      <div>
         <button onClick= { this.mountCounter } disabled = { this.state.mount } className="btn">Mount Counter</button>
-        <button onClick= { this.unmountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
+        <button onClick= { this.unMountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
       </div>
       { this.state.mount ? <Counter/> : null }
     </div>

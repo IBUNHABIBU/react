@@ -35,5 +35,9 @@ export default class Counter extends Component {
         console.log("component Did Update")
         console.log("--------------------------------------")
     }
+    componentWillUnmount(){
+        console.log("component will unmound")
+        console.log("########################################")
+    }
 }
 
