@@ -15,7 +15,7 @@ export default class Counter extends Component {
     }
     componentDidMount(){
         console.log("Component did mount")
-        console.log("****************************************************")
+        console.log("******************************************")
     }
     render() {
         console.log("render")
@@ -31,6 +31,7 @@ export default class Counter extends Component {
     }
     componentDidUpdate(){
         console.log("component Did Update")
+        console.log("--------------------------------------")
     }
 }
 

@@ -6,6 +6,14 @@ import Board from "./components/Board";
 
 import Counter from "./components/test/Counter";
 class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+  }
+  
   render() {
     return (
       <div className="game">
