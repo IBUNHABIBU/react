@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class Counter extends Component {
     constructor(props) {
+        console.log("constructor")
         super(props)
     
         this.state = {
@@ -10,6 +11,7 @@ export default class Counter extends Component {
     }
     
     render() {
+        console.log("render")
         return (
             <div>
         <div className="counter">
