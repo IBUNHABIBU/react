@@ -27,13 +27,14 @@ class App extends Component {
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
-       { this.state.mount ? <Counter/> : null }
+       
      <br />
      <br />
      <div>
         <button onClick= { this.mountCounter } disabled = { this.state.mount } className="btn">Mount Counter</button>
         <button onClick= { this.unmountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
       </div>
+      { this.state.mount ? <Counter/> : null }
     </div>
     );
   }
