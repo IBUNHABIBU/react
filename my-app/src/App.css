@@ -27,8 +27,11 @@ ol, ul {
   outline: none;
   margin: 0.4rem;
 }
-.button:disabled {
-  color: #5c4242;
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 .square {
   background: #fff;

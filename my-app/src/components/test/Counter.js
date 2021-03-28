@@ -24,8 +24,10 @@ export default class Counter extends Component {
         <div className="counter">
           <h1>Counter: {this.state.counter} </h1>
         </div>
+        <div>
         <button className="btn" onClick = { this.increment }> Increment </button>
         <button className="btn" onClick = { this.decrement }> Decrement </button>
+        </div>
             </div>
         )
     }
