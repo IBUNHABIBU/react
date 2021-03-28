@@ -27,6 +27,9 @@ ol, ul {
   outline: none;
   margin: 0.4rem;
 }
+.button:disabled {
+  color: #5c4242;
+}
 .square {
   background: #fff;
   border: 1px solid #999;

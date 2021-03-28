@@ -10,8 +10,10 @@ class App extends Component {
     super(props)
   
     this.state = {
-       
+       mount: true
     }
+    this.mountCounter = () => this.setState({ mount: true })
+    this.unmountCounter = () => this.setState({ mount: false })
   }
   
   render() {
@@ -25,7 +27,11 @@ class App extends Component {
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
-        <Counter />
+       { this.state.mount ? <Counter/> : null }
+     <br />
+     <br />
+        <button onClick= { this.mountCounter } disabled = { this.state.mount } className="btn">Mount Counter</button>
+        <button onClick= { this.unmountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
       </div>
     );
   }
