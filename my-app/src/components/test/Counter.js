@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ErrorComponent from './ErrorComponent'
 
 export default class Counter extends Component {
     constructor(props) {
@@ -19,6 +20,10 @@ export default class Counter extends Component {
             }
         }
         return null;
+    }
+    componentDidCatch(error, info){
+        console.log("component did catch")
+        console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
     }
     componentDidMount(){
         console.log("Component did mount")
@@ -42,6 +47,7 @@ export default class Counter extends Component {
         <button className="btn" onClick = { this.increment }> Increment </button>
         <button className="btn" onClick = { this.decrement }> Decrement </button>
         </div>
+        <ErrorComponent />
             </div>
         )
     }
@@ -64,8 +70,5 @@ export default class Counter extends Component {
         console.log('_________________________________________')
         return true;
     }
-    componentDidCatch(error, info){
-        console.log("component did catch")
-        console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
-    }
+  
 }
