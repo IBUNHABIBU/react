@@ -72,7 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### My progress
 
- halima sware huke mbuva-ibrahim mnyeke-bibi ya baba 
-
- mzee omari
- mwajuma salum
+react component life cycle 
