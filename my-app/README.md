@@ -77,3 +77,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > Date: 1 April 2021
 
 > Should commponent update ?
+
+> React Component Lifecycle - Hooks / Methods Explained freecodecamp.org
