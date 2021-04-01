@@ -40,7 +40,7 @@ export default class Counter extends Component {
         console.log("########################################")
     }
     shouldComponentUpdate(nextProps, nextState){
-        
+        return true;
     }
 }
 
