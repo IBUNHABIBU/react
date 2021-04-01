@@ -69,4 +69,3 @@ export default class Counter extends Component {
         console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
     }
 }
-
