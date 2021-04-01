@@ -57,5 +57,8 @@ export default class Counter extends Component {
         console.log('_________________________________________')
         return true;
     }
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        return null 
+    }
 }
 
