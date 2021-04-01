@@ -39,8 +39,9 @@ class App extends Component {
         <button onClick= { this.unMountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
      <br />
       <button onClick = {this.ignoreProp } className="btn"> Ignore Prop</button>
+      <button onClick = {this.seedGenerator } className="btn"> Generate Seed </button>
       </div>
-      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }/> : null }
+      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp } seed = { this.state.seed } /> : null }
     </div>
     );
   }
