@@ -40,7 +40,7 @@ export default class Counter extends Component {
         console.log("########################################")
     }
     shouldComponentUpdate(nextProps, nextState){
-        if(nextProps.ignoreProp && this.state.ignoreProp !== nextProps.ignoreProp){
+        if(nextProps.ignoreProp && this.props.ignoreProp !== nextProps.ignoreProp){
             return false;
         }
         return true;
