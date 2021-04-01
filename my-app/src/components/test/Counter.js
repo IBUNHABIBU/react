@@ -26,6 +26,8 @@ export default class Counter extends Component {
     }
 
     getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log("Get snap before update")
+        console.log("``````````````````````````````````````````````")
         return null 
     }
 
@@ -62,6 +64,9 @@ export default class Counter extends Component {
         console.log('_________________________________________')
         return true;
     }
- 
+    componentDidCatch(error, info){
+        console.log("component did catch")
+        console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
+    }
 }
 
