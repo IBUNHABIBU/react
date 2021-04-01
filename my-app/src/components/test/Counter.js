@@ -9,9 +9,10 @@ export default class Counter extends Component {
              counter: 0
         }
         this.increment = () => this.setState({ counter: this.state.counter + 1 })
-        this.decrement = () => this.setState({ counter: this.state.counter -1 })
-
-      
+        this.decrement = () => this.setState({ counter: this.state.counter -1 })  
+    }
+    static getDerivedStateFromProps(props, state){
+        
     }
     componentDidMount(){
         console.log("Component did mount")
@@ -41,8 +42,13 @@ export default class Counter extends Component {
     }
     shouldComponentUpdate(nextProps, nextState){
         if(nextProps.ignoreProp && this.props.ignoreProp !== nextProps.ignoreProp){
+            console.log('should component update - DO NOT RENDER')
+            console.log('________________Do not____________________')
             return false;
         }
+        
+        console.log('should component update - RENDER')
+        console.log('_________________________________________')
         return true;
     }
 }
