@@ -25,6 +25,7 @@ export default class Counter extends Component {
     componentDidCatch(error, info){
         console.log("component did catch")
         console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
+        this.setState({ error, info })
     }
     componentDidMount(){
         console.log("Component did mount")
@@ -39,6 +40,9 @@ export default class Counter extends Component {
 
     render() {
         console.log("render")
+        if(this.state.error){
+            return <div>We have encountered an console.error();</div>
+        }
         return (
             <div>
         <div className="counter">
