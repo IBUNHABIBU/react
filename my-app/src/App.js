@@ -11,11 +11,13 @@ class App extends Component {
   
     this.state = {
        mount: true,
-       ignoreProp: 0
+       ignoreProp: 0,
+       seed: 40
     }
     this.mountCounter = () => this.setState({ mount: true })
     this.unMountCounter = () => this.setState({ mount: false })
     this.ignoreProp = () => this.setState({ ignoreProp: Math.random()})
+    this.seedGenerator = () => this.setState({ seed: Number.parseInt(Math.random() * 100 )})
   }
   
   render() {
