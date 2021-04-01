@@ -10,10 +10,12 @@ class App extends Component {
     super(props)
   
     this.state = {
-       mount: true
+       mount: true,
+       ignoreProp: 0
     }
     this.mountCounter = () => this.setState({ mount: true })
     this.unMountCounter = () => this.setState({ mount: false })
+    this.ignoreProp = () => this.setState({ ignoreProp: Math.random()})
   }
   
   render() {
@@ -33,8 +35,10 @@ class App extends Component {
      <div>
         <button onClick= { this.mountCounter } disabled = { this.state.mount } className="btn">Mount Counter</button>
         <button onClick= { this.unMountCounter } disabled = { !this.state.mount } className="btn">Unmount Counter</button>
+     <br />
+      <button onClick = {this.ignoreProp } className="btn"> Ignore Prop</button>
       </div>
-      { this.state.mount ? <Counter/> : null }
+      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }/> : null }
     </div>
     );
   }

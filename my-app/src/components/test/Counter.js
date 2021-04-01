@@ -39,5 +39,8 @@ export default class Counter extends Component {
         console.log("component will unmound")
         console.log("########################################")
     }
+    shouldComponentUpdate(nextProps, nextState){
+        
+    }
 }
 
