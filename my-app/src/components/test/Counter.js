@@ -24,6 +24,11 @@ export default class Counter extends Component {
         console.log("Component did mount")
         console.log("******************************************")
     }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        return null 
+    }
+
     render() {
         console.log("render")
         return (
@@ -38,7 +43,7 @@ export default class Counter extends Component {
             </div>
         )
     }
-    componentDidUpdate(){
+    componentDidUpdate(prevProps, prevState, snapshot){
         console.log("component Did Update")
         console.log("--------------------------------------")
     }
@@ -57,8 +62,6 @@ export default class Counter extends Component {
         console.log('_________________________________________')
         return true;
     }
-    getSnapshotBeforeUpdate(prevProps, prevState){
-        return null 
-    }
+ 
 }
 
