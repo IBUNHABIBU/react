@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ErrorComponent = (props) => {
+const ErrorComponent = (props ) => {
     return (
         <div>
             { props.ignore }
