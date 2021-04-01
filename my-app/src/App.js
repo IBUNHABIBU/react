@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
        mount: true,
        ignoreProp: 0,
-       seed: 40
+       seed: 0
     }
     this.mountCounter = () => this.setState({ mount: true })
     this.unMountCounter = () => this.setState({ mount: false })

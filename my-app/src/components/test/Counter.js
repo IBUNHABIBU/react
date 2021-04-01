@@ -12,6 +12,12 @@ export default class Counter extends Component {
         this.decrement = () => this.setState({ counter: this.state.counter -1 })  
     }
     static getDerivedStateFromProps(props, state){
+        if(props.seed && state.seed !== props.seed ){
+            return {
+                seed: props.seed,
+                counter: props.seed 
+            }
+        }
         return null;
     }
     componentDidMount(){
