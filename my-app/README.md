@@ -79,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > Should commponent update ?
 
 > React Component Lifecycle - Hooks / Methods Explained freecodecamp.org
+
+> Video Ended at 17mins

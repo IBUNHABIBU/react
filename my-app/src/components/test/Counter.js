@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 // import ErrorComponent from './ErrorComponent'
 
+<<<<<<< HEAD
 const ErrorComponent = () => <div> {props.ignore} Hello Hello</div>
+=======
+const ErrorComponent = (prps) => <div> {props.ignore} Hello Hello</div>
+>>>>>>> development
 export default class Counter extends Component {
     constructor(props) {
         console.log("constructor")
@@ -25,7 +29,7 @@ export default class Counter extends Component {
     componentDidCatch(error, info){
         console.log("component did catch")
         console.log('++++++++++++++++++++++++ERROR+++++++++++++++++++++++++')
-        return true;
+        this.setState({ error, info })
     }
     componentDidMount(){
         console.log("Component did mount")
@@ -40,16 +44,20 @@ export default class Counter extends Component {
 
     render() {
         console.log("render")
+        if(this.state.error){
+            return <div>We have encountered an {this.state.error} </div>
+        }
         return (
             <div>
         <div className="counter">
           <h1>Counter: {this.state.counter} </h1>
         </div>
+        <ErrorComponent />
         <div>
         <button className="btn" onClick = { this.increment }> Increment </button>
         <button className="btn" onClick = { this.decrement }> Decrement </button>
         </div>
-        <ErrorComponent />
+        
             </div>
         )
     }
