@@ -72,6 +72,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### My progress
 
-react component life cycle 
+# react component life cycle 
 
 > Date: 1 April 2021
+
+> Should commponent update ?
