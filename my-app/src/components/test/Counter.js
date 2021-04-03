@@ -40,7 +40,7 @@ export default class Counter extends Component {
 
     render() {
         console.log("render", this.state.error)
-        if(this.state.error){
+        if(this.props.showErrorComponent && this.state.error){
             return <div>We have encountered an {this.state.error.message} </div>
         }
         return (
