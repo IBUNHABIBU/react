@@ -8,7 +8,8 @@ export default class Counter extends Component {
         super(props)
     
         this.state = {
-             counter: 0
+             counter: 0,
+             initializing: true
         }
         this.increment = () => this.setState({ counter: this.state.counter + 1 })
         this.decrement = () => this.setState({ counter: this.state.counter -1 })  
@@ -40,6 +41,9 @@ export default class Counter extends Component {
 
     render() {
         console.log("render", this.state.error)
+        if(this.state.initializing) {
+            return <div> initializing ...</div>
+        }
         if(this.props.showErrorComponent && this.state.error){
             return <div>We have encountered an {this.state.error.message} </div>
         }
