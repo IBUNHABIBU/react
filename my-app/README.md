@@ -81,3 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > React Component Lifecycle - Hooks / Methods Explained freecodecamp.org
 
 > Video Ended at 17mins
+
+**************************************************************************************
+
+> Date: 03 April 2021

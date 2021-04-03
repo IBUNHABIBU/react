@@ -12,12 +12,14 @@ class App extends Component {
     this.state = {
        mount: true,
        ignoreProp: 0,
-       seed: 0
+       seed: 0,
+       showErrorComponent: false
     }
     this.mountCounter = () => this.setState({ mount: true })
     this.unMountCounter = () => this.setState({ mount: false })
     this.ignoreProp = () => this.setState({ ignoreProp: Math.random()})
     this.seedGenerator = () => this.setState({ seed: Number.parseInt(Math.random() * 100 )})
+    this.toggleError = () => this.setState( { showErrorComponent: !this.state.showErrorComponent })
   }
   
   render() {
@@ -40,8 +42,11 @@ class App extends Component {
      <br />
       <button onClick = {this.ignoreProp } className="btn"> Ignore Prop</button>
       <button onClick = {this.seedGenerator } className="btn"> Generate Seed </button>
+      <button onClick = {this.toggleError } className="btn"> Toggle Error </button>
       </div>
-      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp } seed = { this.state.seed } /> : null }
+      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }
+      showErrorComponent = { this.state.showErrorComponent }
+       seed = { this.state.seed } /> : null }
     </div>
     );
   }
