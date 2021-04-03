@@ -30,6 +30,9 @@ export default class Counter extends Component {
     }
     componentDidMount(){
         console.log("Component did mount")
+        this.setTimeout(() => {
+            this.setState({ initializing: false })
+        }, 500);
         console.log("******************************************")
     }
 
