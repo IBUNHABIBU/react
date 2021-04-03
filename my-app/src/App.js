@@ -12,7 +12,8 @@ class App extends Component {
     this.state = {
        mount: true,
        ignoreProp: 0,
-       seed: 0
+       seed: 0,
+       showErrorComponent: false
     }
     this.mountCounter = () => this.setState({ mount: true })
     this.unMountCounter = () => this.setState({ mount: false })
@@ -41,7 +42,9 @@ class App extends Component {
       <button onClick = {this.ignoreProp } className="btn"> Ignore Prop</button>
       <button onClick = {this.seedGenerator } className="btn"> Generate Seed </button>
       </div>
-      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp } seed = { this.state.seed } /> : null }
+      { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }
+      showErrorComponent = { this.state.showErrorComponent }
+       seed = { this.state.seed } /> : null }
     </div>
     );
   }
