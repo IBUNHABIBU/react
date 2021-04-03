@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 // import ErrorComponent from './ErrorComponent'
 
-<<<<<<< HEAD
-const ErrorComponent = () => <div> {props.ignore} Hello Hello</div>
-=======
 const ErrorComponent = (prps) => <div> {props.ignore} Hello Hello</div>
->>>>>>> development
 export default class Counter extends Component {
     constructor(props) {
         console.log("constructor")
