@@ -19,6 +19,7 @@ class App extends Component {
     this.unMountCounter = () => this.setState({ mount: false })
     this.ignoreProp = () => this.setState({ ignoreProp: Math.random()})
     this.seedGenerator = () => this.setState({ seed: Number.parseInt(Math.random() * 100 )})
+    this.toggleError = () => this.setState( { showErrorComponent: !this.state.showErrorComponent })
   }
   
   render() {
