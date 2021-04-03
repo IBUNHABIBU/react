@@ -85,3 +85,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 **************************************************************************************
 
 > Date: 03 April 2021
+
+> Video end at 23mins 
+
+> I'm stuck with the `TypeError: this.setTimeout is not a function`
