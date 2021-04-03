@@ -42,6 +42,7 @@ class App extends Component {
      <br />
       <button onClick = {this.ignoreProp } className="btn"> Ignore Prop</button>
       <button onClick = {this.seedGenerator } className="btn"> Generate Seed </button>
+      <button onClick = {this.toggleError } className="btn"> Toggle Error </button>
       </div>
       { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }
       showErrorComponent = { this.state.showErrorComponent }
