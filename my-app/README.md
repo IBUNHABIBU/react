@@ -116,8 +116,8 @@ Description:
 11 - Inspect reservoir tank and if necessary remove dirt and accumulation of mud 
 12- Change sponge of the ventilation lead 
 
-           Name: Leibinger-PRM-6K - Electronics
-            Description:
+Name: Leibinger-PRM-6K - Electronics
+Description:
              1- Check touch function and if necessary recalibrate 
              2- Check display contrast and if necessary readjust 
              3- Check battery condition if necessary
