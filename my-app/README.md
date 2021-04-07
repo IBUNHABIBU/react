@@ -116,11 +116,11 @@ Description:
 11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud \
 12- I have changed the sponge of the ventilation lead \
 
-Name: Leibinger-PRM-6K - Electronics
-Description:
-1- I have checked the  touch function and if necessary recalibrate 
-2- I have checked the  display contrast and if necessary readjust 
-3- I have checked the  battery condition if necessary
+Name: Leibinger-PRM-6K - Electronics\
+Description:\
+1- I have checked the  touch function and if necessary recalibrate \
+2- I have checked the  display contrast and if necessary readjust \
+3- I have checked the  battery condition if necessary\
 
 Name: Leibinger-PRM-6K - Device in general
 Description:
