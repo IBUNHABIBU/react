@@ -108,13 +108,13 @@ Description:
 3- I have rinsed  / flush the drop ball viscometer very well\
 4- I have changed the main filter\
 5- I have checked the ventilation tube (from the ink reservoir tank) for soiling which can cause clogging\
-6- I have checked the inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 
-7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness
-8- I have checked the hydraulic for air-and liquid leakage and if necessary repair and clean the printer 
-9 - I have checked the leakage sensor for cleanliness and function 
-10 - I have checked the function of stirring device (only for pigmented machines)
-11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud 
-12- I have changed the sponge of the ventilation lead 
+6- I have checked the inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) \
+7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness\
+8- I have checked the hydraulic for air-and liquid leakage and if necessary repair and clean the printer \
+9 - I have checked the leakage sensor for cleanliness and function \
+10 - I have checked the function of stirring device (only for pigmented machines)\
+11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud \
+12- I have changed the sponge of the ventilation lead \
 
 Name: Leibinger-PRM-6K - Electronics
 Description:
