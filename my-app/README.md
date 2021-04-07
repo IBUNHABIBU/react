@@ -103,10 +103,10 @@ Name: Leibinger-PRM-6K - Print head Description:
 
 Name: Leibinger-PRM-6K - Hydraulic unit
 Description:
-1- Install Refurbish-Kit for main pump 
-2- Install Refurbish-Kit for suction pump
-3- Rinse / flush the drop ball viscometer very well
-4- Change main filter
+1- I have installed the Refurbish-Kit for main pump 
+2- I have installed the Refurbish-Kit for suction pump
+3- I have rinsed  / flush the drop ball viscometer very well
+4- I have changed the main filter
 5- I have checked the ventilation tube (from the ink reservoir tank) for soiling which can cause clogging
 6- I have checked the inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 
 7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness
@@ -114,7 +114,7 @@ Description:
 9 - I have checked the leakage sensor for cleanliness and function 
 10 - I have checked the function of stirring device (only for pigmented machines)
 11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud 
-12- Change sponge of the ventilation lead 
+12- I have chenged the sponge of the ventilation lead 
 
 Name: Leibinger-PRM-6K - Electronics
 Description:
