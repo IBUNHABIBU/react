@@ -96,8 +96,8 @@ Name: Leibinger-PRM-6K - Print head Description:\
 2- I have cleaned  and lubricated the spindle of the nozzle seal\
 3- I have checked  the nozzle seal for leak tightness and function\
 4- I have O-ring of the nozzle seal\
-5- I have head filter \
-6- I have checked  adjustment of the print head units\
+5- I have cleaned the  head filter \
+6- I have checked the adjustment of the print head units\
 7- I have cleaned  all the parts \
 8- I have checked  all screwing and re tighten
 
