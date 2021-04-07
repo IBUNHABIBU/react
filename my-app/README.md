@@ -110,4 +110,14 @@ Name: Leibinger-PRM-6K - Print head Description:
          6- Check inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 
          7- Check all tubes, connections and fitting screwing for a fix seat and leak tightness
           8- Check hydraulic for air-and liquid leakage and if necessary repair and clean the printer 
-          9 - Check leakage sensor for cleanliness and function 10 - Check function of stirring device (only for pigmented machines) 11 - Inspect reservoir tank and if necessary remove dirt and accumulation of mud 12- Change sponge of the ventilation lead Name: Leibinger-PRM-6K - Electronics Description: 1- Check touch function and if necessary recalibrate 2- Check display contrast and if necessary readjust 3- Check battery condition if necessary Name: Leibinger-PRM-6K - Device in general Description: 1- Check all settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples 2- Clean the housing
+          9 - Check leakage sensor for cleanliness and function 
+          10 - Check function of stirring device (only for pigmented machines)
+           11 - Inspect reservoir tank and if necessary remove dirt and accumulation of mud 
+           12- Change sponge of the ventilation lead 
+
+           Name: Leibinger-PRM-6K - Electronics
+            Description:
+             1- Check touch function and if necessary recalibrate 
+             2- Check display contrast and if necessary readjust 
+             3- Check battery condition if necessary
+              Name: Leibinger-PRM-6K - Device in general Description: 1- Check all settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples 2- Clean the housing
