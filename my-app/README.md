@@ -122,7 +122,7 @@ Description:\
 2- I have checked the  display contrast and if necessary readjust \
 3- I have checked the  battery condition if necessary\
 
-Name: Leibinger-PRM-6K - Device in general
-Description:
-1- I have checked all the settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples 
-2- I have cleaned the housing
+Name: Leibinger-PRM-6K - Device in general\
+Description:\
+1- I have checked all the settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples \
+2- I have cleaned the housing\
