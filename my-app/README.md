@@ -92,12 +92,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 Name: Leibinger-PRM-6K - Print head Description:
- 1- Clean nozzle 
- 2- Clean and lubricate the spindle of the nozzle seal
-  3- Check the nozzle seal for leak tightness and function
-   4- Change O-ring of the nozzle seal
-    5- Change head filter 
-    6- Check adjustment of the print head units
+1- Clean nozzle 
+2- Clean and lubricate the spindle of the nozzle seal
+3- Check the nozzle seal for leak tightness and function
+4- Change O-ring of the nozzle seal
+5- Change head filter 
+6- Check adjustment of the print head units
      7- Clean all the parts 
      8- Check all screwing and if necessary re tighten
       Name: Leibinger-PRM-6K - Hydraulic unit
