@@ -89,3 +89,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > Video end at 23mins 
 
 > I'm stuck with the `TypeError: this.setTimeout is not a function`
+
+
+Name: Leibinger-PRM-6K - Print head Description:
+ 1- Clean nozzle 
+ 2- Clean and lubricate the spindle of the nozzle seal
+  3- Check the nozzle seal for leak tightness and function
+   4- Change O-ring of the nozzle seal
+    5- Change head filter 
+    6- Check adjustment of the print head units
+     7- Clean all the parts 
+     8- Check all screwing and if necessary re tighten
+      Name: Leibinger-PRM-6K - Hydraulic unit Description: 1- Install Refurbish-Kit for main pump 
+      2- Install Refurbish-Kit for suction pump 3- Rinse / flush the drop ball viscometer very well 4- Change main filter 5- Check ventilation tube (from the ink reservoir tank) for soiling which can cause clogging 6- Check inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 7- Check all tubes, connections and fitting screwing for a fix seat and leak tightness 8- Check hydraulic for air-and liquid leakage and if necessary repair and clean the printer 9 - Check leakage sensor for cleanliness and function 10 - Check function of stirring device (only for pigmented machines) 11 - Inspect reservoir tank and if necessary remove dirt and accumulation of mud 12- Change sponge of the ventilation lead Name: Leibinger-PRM-6K - Electronics Description: 1- Check touch function and if necessary recalibrate 2- Check display contrast and if necessary readjust 3- Check battery condition if necessary Name: Leibinger-PRM-6K - Device in general Description: 1- Check all settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples 2- Clean the housing
