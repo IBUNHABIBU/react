@@ -99,7 +99,7 @@ Name: Leibinger-PRM-6K - Print head Description:\
 5- Change head filter \
 6- Check adjustment of the print head units\
 7- Clean all the parts \
-8- Check all screwing and if necessary re tighten
+8- Check all screwing  re tighten
 
 Name: Leibinger-PRM-6K - Hydraulic unit\
 Description:
@@ -118,11 +118,11 @@ Description:
 
 Name: Leibinger-PRM-6K - Electronics\
 Description:\
-1- I have checked the  touch function and if necessary recalibrate \
-2- I have checked the  display contrast and if necessary readjust \
-3- I have checked the  battery condition if necessary
+1- I have checked the  touch function it is OK \
+2- I have checked the  display contrast it is OK \
+3- I have checked the  battery condition is OK
 
 Name: Leibinger-PRM-6K - Device in general\
 Description:\
-1- I have checked all the settings and if necessary set up again (drop control, cam, actual pressure and requested pressure, make samples \
+1- I have checked all the settings (drop control, cam, actual pressure and requested pressure, make samples) and tested OK \
 2- I have cleaned the housing
