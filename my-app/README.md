@@ -105,10 +105,10 @@ Name: Leibinger-PRM-6K - Hydraulic unit
 Description:
 1- Install Refurbish-Kit for main pump 
 2- Install Refurbish-Kit for suction pump
-       3- Rinse / flush the drop ball viscometer very well
-        4- Change main filter
-         5- Check ventilation tube (from the ink reservoir tank) for soiling which can cause clogging
-         6- Check inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 
+3- Rinse / flush the drop ball viscometer very well
+4- Change main filter
+5- Check ventilation tube (from the ink reservoir tank) for soiling which can cause clogging
+6- Check inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) 
          7- Check all tubes, connections and fitting screwing for a fix seat and leak tightness
           8- Check hydraulic for air-and liquid leakage and if necessary repair and clean the printer 
           9 - Check leakage sensor for cleanliness and function 
