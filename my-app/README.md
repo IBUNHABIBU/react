@@ -114,7 +114,7 @@ Description:
 9 - I have checked the leakage sensor for cleanliness and function 
 10 - I have checked the function of stirring device (only for pigmented machines)
 11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud 
-12- I have chenged the sponge of the ventilation lead 
+12- I have changed the sponge of the ventilation lead 
 
 Name: Leibinger-PRM-6K - Electronics
 Description:
