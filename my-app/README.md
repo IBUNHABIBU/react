@@ -98,12 +98,13 @@ Name: Leibinger-PRM-6K - Print head Description:
 4- Change O-ring of the nozzle seal
 5- Change head filter 
 6- Check adjustment of the print head units
-     7- Clean all the parts 
-     8- Check all screwing and if necessary re tighten
-      Name: Leibinger-PRM-6K - Hydraulic unit
-       Description:
-        1- Install Refurbish-Kit for main pump 
-      2- Install Refurbish-Kit for suction pump
+7- Clean all the parts 
+8- Check all screwing and if necessary re tighten
+
+Name: Leibinger-PRM-6K - Hydraulic unit
+Description:
+1- Install Refurbish-Kit for main pump 
+2- Install Refurbish-Kit for suction pump
        3- Rinse / flush the drop ball viscometer very well
         4- Change main filter
          5- Check ventilation tube (from the ink reservoir tank) for soiling which can cause clogging
