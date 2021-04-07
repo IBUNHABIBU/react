@@ -92,14 +92,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 Name: Leibinger-PRM-6K - Print head Description:\
-1- Clean nozzle \
-2- Clean and lubricate the spindle of the nozzle seal\
-3- Check the nozzle seal for leak tightness and function\
-4- Change O-ring of the nozzle seal\
-5- Change head filter \
-6- Check adjustment of the print head units\
-7- Clean all the parts \
-8- Check all screwing  re tighten
+1- I have cleaned the nozzle \
+2- I have cleaned  and lubricated the spindle of the nozzle seal\
+3- I have checked  the nozzle seal for leak tightness and function\
+4- I have O-ring of the nozzle seal\
+5- I have head filter \
+6- I have checked  adjustment of the print head units\
+7- I have cleaned  all the parts \
+8- I have checked  all screwing and re tighten
 
 Name: Leibinger-PRM-6K - Hydraulic unit\
 Description:
@@ -108,12 +108,12 @@ Description:
 3- I have rinsed  / flush the drop ball viscometer very well\
 4- I have changed the main filter\
 5- I have checked the ventilation tube (from the ink reservoir tank) for soiling which can cause clogging\
-6- I have checked the inlet filter for head ventilation and if necessary replace it (for double reciprocating pump) \
+6- I have checked the inlet filter for head ventilation and replace it (for double reciprocating pump) \
 7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness\
 8- I have checked the hydraulic for air-and liquid leakage and if necessary repair and clean the printer \
 9 - I have checked the leakage sensor for cleanliness and function \
 10 - I have checked the function of stirring device (only for pigmented machines)\
-11 - I have inspected reservoir tank and if necessary remove dirt and accumulation of mud \
+11 - I have inspected reservoir tank and removed dirt and accumulation of mud \
 12- I have changed the sponge of the ventilation lead 
 
 Name: Leibinger-PRM-6K - Electronics\
