@@ -35,7 +35,7 @@ export default class TemperatureInput extends Component {
     
     render() {
         const temperature = this.state.temperature;
-    const scale = this.props.scale;
+        const scale = this.props.scale;
     return (
       <fieldset>
         <legend>Enter temperature in {scaleNames[scale]}:</legend>
