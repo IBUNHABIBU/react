@@ -89,3 +89,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > Video end at 23mins 
 
 > I'm stuck with the `TypeError: this.setTimeout is not a function`
+
+> Date 10th  April 2021
+
+  > learing lifting state up
+  > Now, when the TemperatureInput wants to update its temperature, it calls `this.props.onTemperatureChange:`

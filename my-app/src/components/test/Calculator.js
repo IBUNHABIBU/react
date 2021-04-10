@@ -13,10 +13,11 @@ export default class Calculator extends Component {
     }
     handleChange = (e) => {
         this.setState({temperature: e.target.value })
+        // this.props.onTemperatureChange(e.target.value);
     }
     render() {
-        // const temperature = this.state.temperature;
-        const temperature = this.props.temperature;
+        const temperature = this.state.temperature;
+        // const temperature = this.props.temperature;
         return (
             <fieldset>
                 {/* <legend>Enter temperature in Celcious </legend>
