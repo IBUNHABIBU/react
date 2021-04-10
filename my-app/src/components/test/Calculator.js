@@ -14,6 +14,7 @@ export default class Calculator extends Component {
         this.setState({temperature: e.target.value })
     }
     render() {
+        const temperature = this.state.temperature;
         return (
             <fieldset>
                 <legend>Enter temperature in Celcious </legend>
