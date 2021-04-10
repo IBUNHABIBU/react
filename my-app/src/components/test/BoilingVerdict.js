@@ -1,11 +1,9 @@
 import React from 'react'
 
 const BoilingVerdict = (props) => {
-    return (
-        <div>
-            
-        </div>
-    )
+   if( props.celcious >= 100) {
+       return <p></p>
+   }
 }
 
 export default BoilingVerdict
