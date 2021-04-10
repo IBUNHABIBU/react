@@ -4,14 +4,13 @@ const scaleNames = {
     c: 'Celsius',
     f: 'Fahrenheit'
   };
-  
+
 export default class TemperatureInput extends Component {
     constructor(props) {
         super(props)
-    
-        this.state = {
-             
-        }
+     this.handleChange = this.handleChange.bind(this);
+     this.state = {temperature: ''};
+     
     }
     
     render() {
