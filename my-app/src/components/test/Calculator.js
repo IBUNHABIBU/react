@@ -9,7 +9,9 @@ export default class Calculator extends Component {
              temperature: ""
         }
     }
-    handleChange = (e) => 
+    handleChange = (e) => {
+        this.setState({temperature: e.target.value })
+    }
     render() {
         return (
             <div>
