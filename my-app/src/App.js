@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import Board from "./components/Board";
 
 import Counter from "./components/test/Counter";
+import Calculator from "./components/test/Calculator";
 class App extends Component {
   constructor(props) {
     super(props)
@@ -47,6 +48,7 @@ class App extends Component {
       { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }
       showErrorComponent = { this.state.showErrorComponent }
        seed = { this.state.seed } /> : null }
+       <Calculator/>
     </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import BoilingVerdict from "./BoilingVerdict";
 export default class Calculator extends Component {
     constructor(props) {
         super(props)
@@ -14,9 +15,13 @@ export default class Calculator extends Component {
     }
     render() {
         return (
-            <div>
-                
-            </div>
+            <fieldset>
+                <legend>Enter temperature in Celcious </legend>
+                <input value= {temperature}
+                onChange = {this.handleChange }
+                />
+                <BoilingVerdict celcious = {parseFloat(temperature)} />
+            </fieldset>
         )
     }
 }
