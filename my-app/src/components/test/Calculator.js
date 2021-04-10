@@ -6,18 +6,21 @@ export default class Calculator extends Component {
     constructor(props) {
         super(props)
     
-        this.handleChange = this.handleChange.bind(this)
-        this.state = {
-             temperature: ""
-        }
+        this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
+        this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+        this.state = {temperature: '', scale: 'c'};
     }
-    handleChange = (e) => {
-        this.setState({temperature: e.target.value })
-        // this.props.onTemperatureChange(e.target.value);
-    }
+    handleCelsiusChange(temperature) {
+        this.setState({scale: 'c', temperature});
+      }
+    
+      handleFahrenheitChange(temperature) {
+        this.setState({scale: 'f', temperature});
+      }
     render() {
         const temperature = this.state.temperature;
         // const temperature = this.props.temperature;
+        const scale = this.state.scale;
         return (
             <fieldset>
                 {/* <legend>Enter temperature in Celcious </legend>
