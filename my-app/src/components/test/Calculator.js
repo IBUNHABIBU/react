@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import BoilingVerdict from "./BoilingVerdict";
+import TemperatureInput from "./TemperatureInput";
 export default class Calculator extends Component {
     constructor(props) {
         super(props)
@@ -17,11 +18,13 @@ export default class Calculator extends Component {
         const temperature = this.state.temperature;
         return (
             <fieldset>
-                <legend>Enter temperature in Celcious </legend>
+                {/* <legend>Enter temperature in Celcious </legend>
                 <input value= {temperature}
-                onChange = {this.handleChange }
-                />
-                <BoilingVerdict celcious = {parseFloat(temperature)} />
+                onChange = {this.handleChange } */}
+                {/* /> */}
+                {/* <BoilingVerdict celcious = {parseFloat(temperature)} /> */}
+                <TemperatureInput scale="c" />
+                <TemperatureInput scale="f" />
             </fieldset>
         )
     }
