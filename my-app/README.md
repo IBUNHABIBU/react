@@ -89,23 +89,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > Video end at 23mins 
 
 > I'm stuck with the `TypeError: this.setTimeout is not a function`
-
-ation tube (from the ink reservoir tank) for soiling which can cause clogging\
-6- I have checked the inlet filter for head ventilation and replace it (for double reciprocating pump) \
-7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness\
-8- I have checked the hydraulic for air-and liquid leakage and if necessary repair and clean the printer \
-9 - I have checked the leakage sensor for cleanliness and function \
-10 - I have checked the function of stirring device (only for pigmented machines)\
-11 - I have inspected reservoir tank and removed dirt and accumulation of mud \
-12- I have changed the sponge of the ventilation lead 
-
-Name: Leibinger-PRM-6K - Electronics\
-Description:\
-1- I have checked the  touch function it is OK \
-2- I have checked the  display contrast it is OK \
-3- I have checked the  battery condition is OK
-
-Name: Leibinger-PRM-6K - Device in general\
-Description:\
-1- I have checked all the settings (drop control, cam, actual pressure and requested pressure, make samples) and tested OK \
-2- I have cleaned the housing
