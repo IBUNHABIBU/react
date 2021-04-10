@@ -90,24 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 > I'm stuck with the `TypeError: this.setTimeout is not a function`
 
-
-Name: Leibinger-PRM-6K - Print head Description:\
-1- I have cleaned the nozzle \
-2- I have cleaned  and lubricated the spindle of the nozzle seal\
-3- I have checked  the nozzle seal for leak tightness and function\
-4- I have changed O-ring of the nozzle seal\
-5- I have changed the  head filter \
-6- I have checked the adjustment of the print head units\
-7- I have cleaned  all the parts \
-8- I have checked  all screwing and re tighten
-
-Name: Leibinger-PRM-6K - Hydraulic unit\
-Description:
-1- I have installed the Refurbish-Kit for main pump \
-2- I have installed the Refurbish-Kit for suction pump\
-3- I have rinsed  and flush the drop ball viscometer very well\
-4- I have changed the main filter\
-5- I have checked the ventilation tube (from the ink reservoir tank) for soiling which can cause clogging\
+ation tube (from the ink reservoir tank) for soiling which can cause clogging\
 6- I have checked the inlet filter for head ventilation and replace it (for double reciprocating pump) \
 7- I have checked  all tubes, connections and fitting screwing for a fix seat and leak tightness\
 8- I have checked the hydraulic for air-and liquid leakage and if necessary repair and clean the printer \
