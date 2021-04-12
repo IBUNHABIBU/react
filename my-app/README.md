@@ -94,3 +94,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
   > learing lifting state up
   > Now, when the TemperatureInput wants to update its temperature, it calls `this.props.onTemperatureChange:`
+
+> Date 12th April 2021 
