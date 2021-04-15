@@ -16,4 +16,9 @@ export default class Calculator extends Component {
           temperature: e.target.value 
       })
   }
+  render(){
+      return(
+          
+      )
+  }
 }
