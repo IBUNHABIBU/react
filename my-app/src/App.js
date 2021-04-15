@@ -48,7 +48,7 @@ class App extends Component {
       { this.state.mount ? <Counter ignoreProp = { this.state.ignoreProp }
       showErrorComponent = { this.state.showErrorComponent }
        seed = { this.state.seed } /> : null }
-       {/* <Calculator/> */}
+       <Calculator/>
     </div>
     );
   }
