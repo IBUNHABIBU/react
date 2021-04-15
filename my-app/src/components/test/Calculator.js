@@ -18,7 +18,9 @@ export default class Calculator extends Component {
   }
   render(){
       return(
-          
+          <fieldset>
+              <legend>Enter temperature in celcious</legend>
+          </fieldset>
       )
   }
 }
