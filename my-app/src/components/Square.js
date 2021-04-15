@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 class Square extends React.Component {
-  constructor(props) {
-    super(props)
+  // constructor(props) {
+  //   super(props)
   
-    this.state = {
-       value: null
-    }
-  }
+  //   this.state = {
+  //      value: null
+  //   }
+  // }
   
   render() {
     return (
