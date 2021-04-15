@@ -11,5 +11,9 @@ export default class TemperatureInput extends Component {
             temperature: ''
        }
    }
-   
+   handleChange(e) {
+       this.setState(
+           { temperature: e.target.value }
+       )
+   }
 }
