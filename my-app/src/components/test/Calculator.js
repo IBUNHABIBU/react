@@ -19,11 +19,10 @@ export default class Calculator extends Component {
   render(){
       const temperature = this.state.temperature;
       return(
-          <fieldset>
-              <legend>Enter temperature in celcious</legend>
-              <input value= {temperature} onChange = { this.handleChange } />
-              <BoilingVerdict celcious = { parseFloat(temperature)} />
-          </fieldset>
+          <div>
+              <TemperatureInput scale = "c" />
+              <TemperatureInput scale = "f" />
+          </div>
       )
   }
 }
