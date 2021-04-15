@@ -16,4 +16,12 @@ export default class TemperatureInput extends Component {
            { temperature: e.target.value }
        )
    }
+   render() {
+       const temperature = this.state.temperature
+       return (
+           <div>
+               
+           </div>
+       )
+   }
 }
