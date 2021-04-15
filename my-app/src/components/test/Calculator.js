@@ -3,6 +3,14 @@ import React, { Component } from 'react'
 import BoilingVerdict from "./BoilingVerdict";
 import TemperatureInput from "./TemperatureInput";
 
+function toCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+  }
+  
+  function toFahrenheit(celsius) {
+    return (celsius * 9 / 5) + 32;
+  }
+  
 export default class Calculator extends Component {
   constructor(props) {
       super(props)
