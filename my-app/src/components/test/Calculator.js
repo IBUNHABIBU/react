@@ -31,10 +31,16 @@ export default class Calculator extends Component {
            scale: 'c'
       }
   }
-  handleChange(e) {
-      this.setState({
-          temperature: e.target.value 
-      })
+//   handleChange(e) {
+//       this.setState({
+//           temperature: e.target.value 
+//       })
+//   }
+  handleCelciousChange(temperature) {
+    this.setState({ scale: 'c', temperature })
+  }
+  handleFahrenheitChange(temperature) {
+      this.setState({ scale: 'f', temperature })
   }
   render(){
       const temperature = this.state.temperature;
