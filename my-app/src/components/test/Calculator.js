@@ -12,7 +12,12 @@ function toCelsius(fahrenheit) {
   }
   
 function tryConvert(temperature, convert) {
-
+    const input = parseFloat(temperature)
+    if(Number.isNaN(input)) {
+        return ''
+    }
+    const output = convert(input)
+    const rounded = 
 }
 
 export default class Calculator extends Component {
