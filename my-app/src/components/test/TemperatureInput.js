@@ -12,9 +12,9 @@ export default class TemperatureInput extends Component {
        }
    }
    handleChange(e) {
-       this.setState(
-           { temperature: e.target.value }
-       )
+    //    this.setState(
+    //        { temperature: e.target.value }
+    //    )
    }
    render() {
     //    const temperature = this.state.temperature
