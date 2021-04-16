@@ -6,7 +6,7 @@ const scaleNames = {
 export default class TemperatureInput extends Component {
    constructor(props) {
        super(props)
-        this.handleChange = this.handleChange.bind(this)
+       this.handleChange = this.handleChange.bind(this)
        this.state = {
             temperature: ''
        }
@@ -17,7 +17,8 @@ export default class TemperatureInput extends Component {
        )
    }
    render() {
-       const temperature = this.state.temperature
+    //    const temperature = this.state.temperature
+    const temp = this.props.temperature;
        const scale = this.props.scale;
        return (
            <div>
