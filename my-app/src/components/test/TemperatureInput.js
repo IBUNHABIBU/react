@@ -19,7 +19,7 @@ export default class TemperatureInput extends Component {
    }
    render() {
     //    const temperature = this.state.temperature
-    const temp = this.props.temperature;
+    const temperature = this.props.temperature;
        const scale = this.props.scale;
        return (
            <div>

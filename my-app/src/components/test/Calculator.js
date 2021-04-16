@@ -24,9 +24,11 @@ function tryConvert(temperature, convert) {
 export default class Calculator extends Component {
   constructor(props) {
       super(props)
-      this.handleChange = this.handleChange.bind(this)
+      this.handleCelciousChange = this.handleCelciousChange.bind(this)
+      this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this)
       this.state = {
-           temperature: ''
+           temperature: '',
+           scale: 'c'
       }
   }
   handleChange(e) {
