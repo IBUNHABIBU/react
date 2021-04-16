@@ -47,11 +47,18 @@ export default class Calculator extends Component {
       const scale = this.state.scale 
       const celcious = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature
       const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature
-      
+
       return(
           <div>
-              <TemperatureInput scale = "c" />
-              <TemperatureInput scale = "f" />
+              <TemperatureInput scale = "c"
+                temperature = { celcious }
+                onTemperatureChange = { this.handleCelciousChange } />
+              <TemperatureInput scale = "f" 
+                temperature = { fahrenheit }
+                onTemperatureChange = { this.handleFahrenheitChange }
+              />
+              <BoilingVerdict 
+              celcious = { parseFloat(celcious) } />
           </div>
       )
   }
