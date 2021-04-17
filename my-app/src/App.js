@@ -29,7 +29,9 @@ class App extends Component {
         
         <div className="game-board">
           <Board />
+          <br/>
         </div>
+        <br />
         <div className="game-info">
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
