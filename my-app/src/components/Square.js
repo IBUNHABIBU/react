@@ -16,11 +16,11 @@
 //   export default Square;
 import React from 'react'
 
-const Square = () => {
+const Square = (props) => {
   return (
     <div>
       <button className="square" onClick ={()=>
-          this.props.onClick()
+          props.onClick()
        }>
         { this.props.value }
       </button>
