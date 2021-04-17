@@ -19,7 +19,11 @@ import React from 'react'
 const Square = () => {
   return (
     <div>
-      
+      <button className="square" onClick ={()=>
+          this.props.onClick()
+       }>
+        { this.props.value }
+      </button>
     </div>
   )
 }
