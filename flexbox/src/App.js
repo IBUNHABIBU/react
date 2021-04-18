@@ -23,28 +23,28 @@ export default class App extends Component {
           <div className="calc-wrapper">
             <Input input = { this.state.input } />
             <div className="row">
-                <Buttons>7</Buttons>
-                <Buttons>8</Buttons>
-                <Buttons>9</Buttons>
-                <Buttons>/</Buttons>
+                <Buttons handleClick = { this.addToInput }>7</Buttons>
+                <Buttons handleClick = { this.addToInput }>8</Buttons>
+                <Buttons handleClick = { this.addToInput }>9</Buttons>
+                <Buttons handleClick = { this.addToInput }>/</Buttons>
             </div>
             <div className="row">
-                <Buttons>4</Buttons>
-                <Buttons>5</Buttons>
-                <Buttons>6</Buttons>
-                <Buttons>*</Buttons>
+                <Buttons handleClick = { this.addToInput }>4</Buttons>
+                <Buttons handleClick = { this.addToInput }>5</Buttons>
+                <Buttons handleClick = { this.addToInput }>6</Buttons>
+                <Buttons handleClick = { this.addToInput }>*</Buttons>
             </div>
             <div className="row">
-                <Buttons>1</Buttons>
-                <Buttons>2</Buttons>
-                <Buttons>3</Buttons>
-                <Buttons>+</Buttons>
+                <Buttons handleClick = { this.addToInput }>1</Buttons>
+                <Buttons handleClick = { this.addToInput }>2</Buttons>
+                <Buttons handleClick = { this.addToInput }>3</Buttons>
+                <Buttons handleClick = { this.addToInput }>+</Buttons>
             </div>
             <div className="row">
-                <Buttons>.</Buttons>
-                <Buttons>0</Buttons>
-                <Buttons>=</Buttons>
-                <Buttons>-</Buttons>
+                <Buttons handleClick = { this.addToInput }>.</Buttons>
+                <Buttons handleClick = { this.addToInput }>0</Buttons>
+                <Buttons handleClick = { this.addToInput }>=</Buttons>
+                <Buttons handleClick = { this.addToInput }>-</Buttons>
             </div>
             <div className="row">
               <ClearButton children = "clear" handleClear = { () =>  this.setState({ input: "" })} />
