@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ClearButton = () => {
+const ClearButton = (props) => {
     return (
-        <div>
-            
+        <div className = 'clear-button'>
+            { props.children }
         </div>
     )
 }
