@@ -1,13 +1,15 @@
 
 import './App.css';
 import Buttons from './components/Buttons'
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Input from './components/Input'
 
 export default class App extends Component {
   render() {
     return (
       <div className="app">
           <div className="calc-wrapper">
+            <Input input = { this.state.input } />
             <div className="row">
                 <Buttons>7</Buttons>
                 <Buttons>8</Buttons>
