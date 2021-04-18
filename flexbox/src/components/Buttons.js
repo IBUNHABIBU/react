@@ -6,7 +6,7 @@ const isOperator = val => {
 }
 const Buttons = props => {
     return (
-        <div>
+        <div className = { `button-wrapper ${ isOperator(props.children) ? null : "operator" }`}>
             { props.children }
         </div>
     )
