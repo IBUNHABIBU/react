@@ -3,6 +3,7 @@ import './App.css';
 import Buttons from './components/Buttons'
 import React, { Component } from 'react';
 import Input from './components/Input'
+import ClearButton from './components/ClearButton';
 
 export default class App extends Component {
   constructor(props) {
@@ -41,6 +42,9 @@ export default class App extends Component {
                 <Buttons>0</Buttons>
                 <Buttons>=</Buttons>
                 <Buttons>-</Buttons>
+            </div>
+            <div className="row">
+              <ClearButton />
             </div>
           </div>
       </div>
