@@ -13,7 +13,12 @@ export default class App extends Component {
                 <Buttons>2</Buttons>
                 <Buttons>3</Buttons>
                 <Buttons>+</Buttons>
-                <Buttons children = "1" />
+            </div>
+            <div className="row">
+                <Buttons>1</Buttons>
+                <Buttons>2</Buttons>
+                <Buttons>3</Buttons>
+                <Buttons>+</Buttons>
             </div>
           </div>
       </div>
