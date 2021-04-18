@@ -44,7 +44,7 @@ export default class App extends Component {
                 <Buttons>-</Buttons>
             </div>
             <div className="row">
-              <ClearButton />
+              <ClearButton children = "clear" handleClear = { () =>  this.setState({ input: "" })} />
             </div>
           </div>
       </div>
