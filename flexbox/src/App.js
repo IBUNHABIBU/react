@@ -5,6 +5,14 @@ import React, { Component } from 'react';
 import Input from './components/Input'
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       input: ''
+    }
+  }
+  
   render() {
     return (
       <div className="app">

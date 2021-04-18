@@ -4,7 +4,7 @@ import './Input.css';
 const Input = (props) => {
     return (
         <div className='input'>
-            { props.Input }
+            { props.input }
         </div>
     )
 }
