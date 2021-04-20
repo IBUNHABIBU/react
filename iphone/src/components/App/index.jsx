@@ -7,7 +7,7 @@ const App = () => {
             <div className="top">4:43</div>
             <div className="display">0</div>
             <div className="buttons">
-                <Button />
+                <Button children = "AC" />
             </div>
             <div className="bottom">-</div>
         </div>
