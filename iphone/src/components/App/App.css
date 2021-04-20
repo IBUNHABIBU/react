@@ -8,11 +8,20 @@
 }
 
 .top {
-    height: 250px;
+    height: 150px;
     padding: 0 20px;
 }
 
 .display {
-    font-size: 130px;
+    font-size: 80px;
     margin-bottom: 20px;
+    text-align: right;
+    font-weight: 300;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
