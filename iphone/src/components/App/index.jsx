@@ -3,8 +3,8 @@ import './App.css'
 import Button from '../Button';
 const App = () => {
     const [value, setstate] = useState("0")
-    const handleButtonClick = () => {
-
+    const handleButtonClick = ( content ) => {
+        setValue( (parseFloat(value) + content).toString )
     }
     return (
         <div className="app">
