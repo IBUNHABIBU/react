@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './App.css'
 import Button from '../Button';
 const App = () => {
-    const [value, setstate] = useState("0")
-    const handleButtonClick = ( content ) => {
-        setValue( (parseFloat(value) + content).toString )
+    const [value, setValue] = useState("0")
+    const handleButtonClick = ( children ) => {
+        setValue( (parseFloat(value) + children).toString() );
     }
     return (
         <div className="app">
