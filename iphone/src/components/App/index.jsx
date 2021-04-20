@@ -21,11 +21,16 @@ const App = () => {
                 <Button children = "6" />
                 <Button children = "-" />
 
-                <Button children = "0" />
                 <Button children = "1" />
                 <Button children = "2" />
                 <Button children = "3" />
-                <Button children = "/" />
+                <Button children = "+" />
+                
+                
+                <Button children = "0" />
+                <Button children = "." />
+                <Button children = "=" />
+            
             </div>
             <div className="bottom">-</div>
         </div>
