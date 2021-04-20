@@ -15,3 +15,8 @@
     grid-column: 1 /span 2;
     border-radius: 57.3px;
 }
+
+.button.function {
+    color: black;
+    background-color: #a5a5a5;
+}
