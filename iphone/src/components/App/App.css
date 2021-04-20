@@ -8,7 +8,7 @@
 }
 
 .top {
-    height: 150px;
+    height: 100px;
     padding: 0 20px;
 }
 
@@ -17,6 +17,7 @@
     margin-bottom: 20px;
     text-align: right;
     font-weight: 300;
+    padding: 1rem;
 }
 
 .buttons {
@@ -24,4 +25,5 @@
     grid-gap: 10px;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
+    padding: 8px;
 }
