@@ -19,7 +19,7 @@ const App = () => {
                 <Button children = "4" />
                 <Button children = "5" />
                 <Button children = "6" />
-                <Button children = "-" />
+                <Button children = "-" type = "operator" />
 
                 <Button children = "1" />
                 <Button children = "2" />

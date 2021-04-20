@@ -20,3 +20,8 @@
     color: black;
     background-color: #a5a5a5;
 }
+
+.button.operator {
+    color: #ffffff;
+    background-color: #f1a33c;
+}
