@@ -1,0 +1,17 @@
+.button {
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 25px;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+}
+
+.button.zero {
+    width: 140px;
+    grid-column: 1 /span 2;
+    border-radius: 57.3px;
+}
