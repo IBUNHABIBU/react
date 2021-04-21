@@ -20,16 +20,16 @@ const App = () => {
             return;
         }
         if(children == "+"){
-
+            setmemory(parseFloat(value))
         }
         if(children == "-"){
-            
+            setmemory(parseFloat(value))
         }
         if(children == "*"){
-            
+            setmemory(parseFloat(value))
         }
         if(children == "/"){
-            
+            setmemory(parseFloat(value))
         }
         setValue( (parseFloat(value) + children).toString() );
     };
