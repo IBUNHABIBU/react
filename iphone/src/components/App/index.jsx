@@ -10,6 +10,7 @@ const App = () => {
         if(children == "AC") {
             setValue("0");
             setmemory(null)
+            setoperator(null)
             return;
         }
         if(children == "+/-") {
