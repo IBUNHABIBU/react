@@ -8,6 +8,7 @@ const App = () => {
         const num = parseFloat(value)
         if(children == "AC") {
             setValue("0");
+            setmemory(null)
             return;
         }
         if(children == "+/-") {
@@ -17,6 +18,18 @@ const App = () => {
         if(children == "%") {
             setValue((num/100).toString())
             return;
+        }
+        if(children == "+"){
+
+        }
+        if(children == "-"){
+            
+        }
+        if(children == "*"){
+            
+        }
+        if(children == "/"){
+            
         }
         setValue( (parseFloat(value) + children).toString() );
     };
