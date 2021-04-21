@@ -3,6 +3,7 @@ import './App.css'
 import Button from '../Button';
 const App = () => {
     const [value, setValue] = useState("0")
+    const [memory, setmemory] = useState(null)
     const handleButtonClick = children => ( ) => {
         const num = parseFloat(value)
         if(children == "AC") {
