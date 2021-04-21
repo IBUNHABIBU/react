@@ -25,21 +25,25 @@ const App = () => {
         if(children == "+"){
             setmemory(parseFloat(value))
             setValue("0")
+            setoperator("+")
             return;
         }
         if(children == "-"){
             setmemory(parseFloat(value))
             setValue("0")
+            setoperator("-")
             return;
         }
         if(children == "*"){
             setmemory(parseFloat(value))
             setValue("0")
+            setoperator("*")
             return;
         }
         if(children == "/"){
             setmemory(parseFloat(value))
             setValue("0")
+            setoperator("/")
             return;
         }
         setValue( (parseFloat(value) + children).toString() );
