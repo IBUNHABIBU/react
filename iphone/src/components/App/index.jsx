@@ -48,6 +48,10 @@ const App = () => {
             return;
         }
         if(children == "="){
+            if(!operator) return;
+            if( operator === "+") {
+
+            }
             setmemory(parseFloat(value))
             setValue("0")
             setoperator("/")
