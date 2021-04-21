@@ -15,6 +15,7 @@ const App = () => {
         }
         if(children == "%") {
             setValue((num/100).toString())
+            return;
         }
         setValue( (parseFloat(value) + children).toString() );
     };
