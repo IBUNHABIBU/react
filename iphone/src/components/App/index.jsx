@@ -3,9 +3,13 @@ import './App.css'
 import Button from '../Button';
 const App = () => {
     const [value, setValue] = useState("0")
-    const handleButtonClick = ( children ) => {
+    const handleButtonClick = children => ( ) => {
+        if(children == "AC") {
+            setValue("0");
+            return;
+        }
         setValue( (parseFloat(value) + children).toString() );
-    }
+    };
     return (
         <div className="app">
             <div className="top">4:43</div>
