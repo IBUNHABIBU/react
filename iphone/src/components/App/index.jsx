@@ -4,6 +4,7 @@ import Button from '../Button';
 const App = () => {
     const [value, setValue] = useState("0")
     const [memory, setmemory] = useState(null)
+    const [operator, setoperator] = useState(null)
     const handleButtonClick = children => ( ) => {
         const num = parseFloat(value)
         if(children == "AC") {
@@ -17,6 +18,8 @@ const App = () => {
         }
         if(children == "%") {
             setValue((num/100).toString())
+            setmemory(null)
+            setoperator(null)
             return;
         }
         if(children == "+"){
