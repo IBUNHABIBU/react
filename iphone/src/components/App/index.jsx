@@ -4,8 +4,13 @@ import Button from '../Button';
 const App = () => {
     const [value, setValue] = useState("0")
     const handleButtonClick = children => ( ) => {
+        const num = parseFloat(value)
         if(children == "AC") {
             setValue("0");
+            return;
+        }
+        if(children == "+/-") {
+            setValue((num * -1).toString())
             return;
         }
         setValue( (parseFloat(value) + children).toString() );
