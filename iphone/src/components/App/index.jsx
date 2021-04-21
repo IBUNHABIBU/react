@@ -21,15 +21,23 @@ const App = () => {
         }
         if(children == "+"){
             setmemory(parseFloat(value))
+            setValue("0")
+            return;
         }
         if(children == "-"){
             setmemory(parseFloat(value))
+            setValue("0")
+            return;
         }
         if(children == "*"){
             setmemory(parseFloat(value))
+            setValue("0")
+            return;
         }
         if(children == "/"){
             setmemory(parseFloat(value))
+            setValue("0")
+            return;
         }
         setValue( (parseFloat(value) + children).toString() );
     };
