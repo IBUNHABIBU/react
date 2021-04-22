@@ -104,3 +104,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     `Congratulations! You now have a working tic-tac-toe game. And you’ve just learned the basics of React too. So you’re probably the real winner here.`
   
   ## Next tutorials is : Adding the time travel
+  
+  > Date 22 April 2021
