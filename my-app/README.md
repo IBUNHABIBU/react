@@ -110,3 +110,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
    > Learning redux
 
    > introducing redux
+
+  #### when not to use redux 
+
+  * tight budget
+  * small to medium size app
+  * simple ui data flow
+  * static data
