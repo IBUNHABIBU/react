@@ -59,9 +59,8 @@ const App = () => {
                 setValue((memory / parseFloat(value)).toString())
             }
 
-            setmemory(parseFloat(value))
-            setValue("0")
-            setoperator("/")
+            setmemory(null);
+            setoperator(null);
             return;
         }
         setValue( (parseFloat(value) + children).toString() );
