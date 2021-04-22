@@ -50,7 +50,7 @@ const App = () => {
         if(children == "="){
             if(!operator) return;
             if( operator === "+") {
-
+                setValue((memory + parseFloat(value)).toString())
             }
             setmemory(parseFloat(value))
             setValue("0")
