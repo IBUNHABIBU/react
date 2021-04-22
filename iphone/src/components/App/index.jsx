@@ -51,7 +51,14 @@ const App = () => {
             if(!operator) return;
             if( operator === "+") {
                 setValue((memory + parseFloat(value)).toString())
+            } else if (operator==="-") {
+                setValue((memory - parseFloat(value)).toString())
+            } else if (operator==="*") {
+                setValue((memory * parseFloat(value)).toString())
+            } else if (operator==="/") {
+                setValue((memory / parseFloat(value)).toString())
             }
+
             setmemory(parseFloat(value))
             setValue("0")
             setoperator("/")
