@@ -106,3 +106,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   ## Next tutorials is : Adding the time travel
   
   > Date 22 April 2021
+
+   > Learning redux
