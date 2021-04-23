@@ -87,7 +87,6 @@ const App = () => {
             } else {
                 setmemory(parseFloat(value))
             }
-            setmemory(parseFloat(value))
             setValue("0")
             setoperator("/")
             return;
