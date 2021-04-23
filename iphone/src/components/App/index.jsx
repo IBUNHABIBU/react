@@ -26,14 +26,14 @@ const App = () => {
         if(children == "+"){
             if(!operator) return;
             if( operator === "+") {
-                setValue((memory + parseFloat(value)).toString())
+                setmemory((memory + parseFloat(value)).toString())
             } else if (operator==="-") {
-                setValue((memory - parseFloat(value)).toString())
+                setmemory((memory - parseFloat(value)).toString())
             } else if (operator==="*") {
-                setValue((memory * parseFloat(value)).toString())
+                setmemory((memory * parseFloat(value)).toString())
             } else if (operator==="/") {
-                setValue((memory / parseFloat(value)).toString())
-            }
+                setmemory((memory / parseFloat(value)).toString())
+            } else {}
             setmemory(parseFloat(value))
             setValue("0")
             setoperator("+")
@@ -82,7 +82,7 @@ const App = () => {
             } else if (operator==="/") {
                 setmemory((memory / parseFloat(value)).toString())
             } else {
-                
+                setmemory(parseFloat(value))
             }
             setmemory(parseFloat(value))
             setValue("0")
