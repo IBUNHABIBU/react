@@ -60,15 +60,16 @@ const App = () => {
             return;
         }
         if(children == "*"){
-            if(!operator) return;
-            if( operator === "+") {
-                setmemory((memory + parseFloat(value)).toString())
-            } else if (operator==="-") {
-                setmemory((memory - parseFloat(value)).toString())
-            } else if (operator==="*") {
-                setmemory((memory * parseFloat(value)).toString())
-            } else if (operator==="/") {
-                setmemory((memory / parseFloat(value)).toString())
+            if(operator !== null ) {
+                if( operator === "+") {
+                    setmemory((memory + parseFloat(value)).toString())
+                } else if (operator==="-") {
+                    setmemory((memory - parseFloat(value)).toString())
+                } else if (operator==="*") {
+                    setmemory((memory * parseFloat(value)).toString())
+                } else if (operator==="/") {
+                  setmemory((memory / parseFloat(value)).toString())
+                }
             } else {
                 setmemory(parseFloat(value))
             }
