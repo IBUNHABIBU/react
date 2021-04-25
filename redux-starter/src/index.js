@@ -1,5 +1,7 @@
 function sayHello() {
-    return "Hello world"
+    return function(){
+        return "Hello world"
+    }
 }
 
 function greet(fnMessage) {
