@@ -9,3 +9,38 @@ const Button = ( { children, type, onButtonClick} )=> {
 }
 
 export default Button
+
+
+var insert = function(intervals, newInterval) {
+    let targetIndex = 0
+    let start = 0
+    let end = intervals.length - 1
+    while (start <= end) {
+      const middle = Math.floor((start + end) / 2)
+      if (intervals[middle][0] >= newInterval[0]) {
+        end = middle - 1
+      } else {
+        start = middle + 1
+      }
+    }
+  
+    targetIndex = start
+    intervals.splice(targetIndex, 0, newInterval)
+    let i = targetIndex
+    while (i < intervals.length) {
+      if (i > 0 && isOverlap(intervals[i - 1], intervals[i])) {
+        intervals.splice(i - 1, 2, mergeTwo(intervals[i - 1], intervals[i]))
+      } else {
+        i += 1
+      }
+    }
+    return intervals
+};
+
+  function mergeTwo(a, b){
+    return [Math.min(a[0], b[0]), Math.max(a[1], b[1])]
+  }
+
+  function isOverlap(a, b){
+    return a[1] >= b[0]
+  }
