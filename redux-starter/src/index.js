@@ -1,1 +1,9 @@
-console.log("Hello World!");
+function sayHello() {
+    return "Hello world"
+}
+
+function greet(fnMessage) {
+    console.log(fnMessage())
+}
+
+greet(sayHello)
