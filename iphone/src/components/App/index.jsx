@@ -111,7 +111,7 @@ const App = () => {
             setoperator(null);
             return;
         }
-        setValue( (parseFloat(value) + children).toString() );
+        setValue( (parseFloat(value + children)).toString() );
     };
     return (
         <div className="app">
