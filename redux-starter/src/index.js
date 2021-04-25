@@ -4,4 +4,4 @@ const input = "   Javascript    "
 
 const result = wrapDiv(trim(input))
 
-console.log(result)
+const transform = pipe(wrapDiv,trim)
