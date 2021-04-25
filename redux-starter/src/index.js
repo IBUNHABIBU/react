@@ -9,3 +9,6 @@ function greet(fnMessage) {
 }
 
 greet(sayHello)
+
+let fn = sayHello();
+let msg = fn()
