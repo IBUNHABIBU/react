@@ -36,11 +36,3 @@ var insert = function(intervals, newInterval) {
     }
     return intervals
 };
-
-  function mergeTwo(a, b){
-    return [Math.min(a[0], b[0]), Math.max(a[1], b[1])]
-  }
-
-  function isOverlap(a, b){
-    return a[1] >= b[0]
-  }
