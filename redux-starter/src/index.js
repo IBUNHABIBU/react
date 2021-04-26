@@ -47,3 +47,5 @@ const res = { ... details,
 
 console.log(details)
 
+// immutability with arrays 
+
