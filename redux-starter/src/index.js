@@ -11,8 +11,16 @@ let r = transform(input)
 console.log(r)
 
 // immutable object 
-// first way 
+// first way  object.assign
 const person = { name: "John"}
 
 const updated = Object.assign({}, person, { name: "Kamala", age: 80 })
+console.log(updated)
+
+// using spread operator 
+
+const sobj = {... person, name: "Jumaa"}
+
+console.log(sobj)
+
 
