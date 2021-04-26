@@ -1,11 +1,11 @@
-// const trim = str => str.trim()
-// const wrapDiv = str => `<div>${str}</div>`
-// const input = "   Javascript    "
+import {pipe} from 'lodash/fp'
+const tri = str => str.trim()
+const wrapDiv = str => `<div>${str}</div>`
+const input = "   Javascript    "
 
-// const result = wrapDiv(trim(input))
+console.log("hellor",tri(input))
+const result = wrapDiv(tri(input))
 
-// const transform = pipe(wrapDiv,trim)
-
-const obj = {}
-obj.book = "dre"
-console.log(obj)
+const transform = pipe(wrapDiv,tri)
+let r = transform(input)
+console.log(r)
