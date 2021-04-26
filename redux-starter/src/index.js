@@ -37,5 +37,13 @@ updetails.address.city = "Kiomboi singida"
 
 console.log(details) // here the address.city of the original object has been mutated
 
+// solution 
 
+const res = { ... details, 
+            address: {
+                ... person.address,
+                city: "New york"
+            }}
+
+console.log(details)
 
