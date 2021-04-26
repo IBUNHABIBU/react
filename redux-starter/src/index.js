@@ -23,4 +23,19 @@ const sobj = {... person, name: "Jumaa"}
 
 console.log(sobj)
 
+//  the problem with coping object when there is nested object  check the example below
+// this is shallow copy
+
+const details = { name: "Janeth",
+ address: {
+    city: "Dodoma",
+    box: 485
+}}
+
+const updetails  = { ... details}
+updetails.address.city = "Kiomboi singida"
+
+console.log(details) // here the address.city of the original object has been mutated
+
+
 
