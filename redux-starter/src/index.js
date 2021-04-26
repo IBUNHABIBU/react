@@ -9,3 +9,10 @@ const result = wrapDiv(tri(input))
 const transform = pipe(wrapDiv,tri)
 let r = transform(input)
 console.log(r)
+
+// immutable object 
+// first way 
+const person = { name: "John"}
+
+const updated = Object.assign({}, person, { name: "Kamala", age: 80 })
+
