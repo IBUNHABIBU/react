@@ -68,8 +68,15 @@ console.log(removed)
 // using immutable library importing Map from immutable 
 const bk = Map({ title: "The prince" })
 
+function publishBook(buk) {
+    return buk.set("isPublished", true)
+}
+
+let pubbook  = publishBook(bk)
 console.log(bk.get("title"))
 // returning plain js object 
-console.log(bk.toJS())
+console.log(pubbook.toJS())
+
+
 
 
