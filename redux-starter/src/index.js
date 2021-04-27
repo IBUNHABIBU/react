@@ -1,4 +1,6 @@
 import {pipe} from 'lodash/fp'
+import { Map } from 'immutable';
+
 const tri = str => str.trim()
 const wrapDiv = str => `<div>${str}</div>`
 const input = "   Javascript    "
@@ -62,6 +64,7 @@ console.log(a)
 
 const removed = array.filter(el => el !== 2)
 console.log(removed)
+
 
 
 
