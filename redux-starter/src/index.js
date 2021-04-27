@@ -54,11 +54,14 @@ const array = [1,2,3]
 // adding numbe 4 to an array
 const added = [8, ... array, 4]
 console.log(added)
-
 // inserting an item at a certain index 
 const index = array.indexOf(2)
-const a = [...array.slice(0,index)]
-
+const a = [...array.slice(0,index), ... array.slice(index)]
 console.log(a)
+// Removing an element we use filter method
+
+const removed = array.filter(el => el !== 2)
+console.log(removed)
+
 
 
