@@ -68,17 +68,17 @@ console.log(removed)
 
 // using immutable library importing Map from immutable 
 const bk = Map({ title: "The prince" })
-
-function publishBook(bk) {
-    produce(bk, draftbook => {
+const kitabu = { name:"Ngoswe" }
+function publishBook(kitabu) {
+    return produce(kitabu, draftbook => {
         draftbook.isPublished=true 
-    })
+    });
 }
 
-let pubbook  = publishBook(bk)
+let pubbook  = publishBook(kitabu)
 console.log(bk.get("title"))
 // returning plain js object 
-console.log(pubbook.toJS())
+console.log(pubbook)
 
 
 
