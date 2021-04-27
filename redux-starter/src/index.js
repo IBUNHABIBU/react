@@ -45,8 +45,13 @@ const res = { ... details,
                 city: "New york"
             }}
 
+
 console.log(details)
 
 // immutability with arrays 
-array = [1,2,3]
+const array = [1,2,3]
+// adding removing and updating an item in this array 
+// adding numbe 4 to an array
+const added = [8, ... array, 4]
+console.log(added)
 
