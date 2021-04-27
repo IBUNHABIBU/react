@@ -69,5 +69,7 @@ console.log(removed)
 const bk = Map({ title: "The prince" })
 
 console.log(bk.get("title"))
+// returning plain js object 
+console.log(bk.toJS())
 
 
