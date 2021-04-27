@@ -48,4 +48,5 @@ const res = { ... details,
 console.log(details)
 
 // immutability with arrays 
+array = [1,2,3]
 
