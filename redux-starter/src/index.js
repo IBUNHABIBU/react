@@ -65,6 +65,9 @@ console.log(a)
 const removed = array.filter(el => el !== 2)
 console.log(removed)
 
+// using immutable library importing Map from immutable 
+const bk = Map({ title: "The prince" })
 
+console.log(bk.get("title"))
 
 
