@@ -1,5 +1,6 @@
-import {pipe} from 'lodash/fp'
+import {pipe} from 'lodash/fp';
 import { Map } from 'immutable';
+import { produce } from "immer";
 
 const tri = str => str.trim()
 const wrapDiv = str => `<div>${str}</div>`
