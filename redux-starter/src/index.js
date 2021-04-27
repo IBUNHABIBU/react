@@ -55,3 +55,10 @@ const array = [1,2,3]
 const added = [8, ... array, 4]
 console.log(added)
 
+// inserting an item at a certain index 
+const index = array.indexOf(2)
+const a = [...array.slice(0,index)]
+
+console.log(a)
+
+
