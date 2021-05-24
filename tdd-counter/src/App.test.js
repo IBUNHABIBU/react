@@ -8,6 +8,10 @@ configure({ adapter: new Adapter() });
 describe('Counter testing', () => {
   test('renders the title of counter', () => {
     const wrapper = shallow(<App />)
-    expect(wrapper.find('h1').text()).toContain('this is counter app');
+    expect(wrapper.find('h1').text()).toContain('This is counter app');
   });
+  test('rendering our button  with text of increment', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find('#increment-btn').text()).toBe('increment');
+  })
 });
