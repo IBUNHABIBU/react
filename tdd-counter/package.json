@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,7 +41,12 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6"
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest-cli": "^27.0.1",
+    "react-addons-test-utils": "^15.6.2",
+    "redux-mock-store": "^1.5.4",
+    "sinon": "^11.1.0"
   }
 }
