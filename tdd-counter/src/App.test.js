@@ -1,17 +1,33 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
-import { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Counter from './components/Counter';
+import { shallow } from 'enzyme';
 
-configure({ adapter: new Adapter() });
-
+let wrapper;
+beforeEach(()=> {
+  wrapper = shallow(<Counter />)
+});
 describe('Counter testing', () => {
   test('renders the title of counter', () => {
-    const wrapper = shallow(<App />)
     expect(wrapper.find('h1').text()).toContain('This is counter app');
   });
+
   test('rendering our button  with text of increment', () => {
-    const wrapper = shallow(<App />);
     expect(wrapper.find('#increment-btn').text()).toBe('increment');
+  })
+
+  test('render the initial value of state in a div', () => {
+   expect(wrapper.find('#counter-value').text()).toBe("0");
+  });
+
+  test('render the click event of the increament btn and increment valu ', () => {
+    wrapper.find('#increment-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe("1");
+  });
+
+  test('render the click event of the decrement btn and decrement value ', () => {
+    wrapper.find('#increment-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe("1");
+    wrapper.find('#decrement-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe("0");
   })
 });
