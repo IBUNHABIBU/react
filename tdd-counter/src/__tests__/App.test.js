@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Counter from '../components/Counter';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 let wrapper;
 beforeEach(()=> {
@@ -31,3 +31,7 @@ describe('Counter testing', () => {
     expect(wrapper.find('#counter-value').text()).toBe("0");
   })
 });
+
+describe("name should show result when click 3 numbers", () => {
+   wrapper.find()
+})
