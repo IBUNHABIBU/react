@@ -1,6 +1,6 @@
 import * as actions from './actionTypes';
 
-function bugAdded(description) {
+export function bugAdded(description) {
     return {
         type: BUG_ADDED,
         payload: {
