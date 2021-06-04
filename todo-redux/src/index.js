@@ -21,8 +21,13 @@
 // serviceWorker.unregister();
 
 
-function sayHello() {
-  return "Hello world";
+function add(a) {
+  return function (b) {
+    return a + b ;
+  }
 }
 
-let fn = sayHello;
+add(2);
+add(3)
+let result = add(4)(1);
+console.log(add(4));

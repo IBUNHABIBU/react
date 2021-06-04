@@ -1,14 +1,14 @@
 import store from './store';
-
+import { BUG_ADDED, BUG_REMOVED } from './actionTypes';
 store.dispatch({
-    type: "bugAdded",
+    type: BUG_ADDED,
     payload: {
         description: "Bug1"
     }
 })
 
 store.dispatch({
-    type: "bugRemoved",
+    type: BUG_REMOVED,
     payload: {
         id: 1
     }
