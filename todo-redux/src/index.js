@@ -2,19 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import TodoApp from './TodoApp';
-import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 
 import { createStore } from 'redux';
-import allReducers from './redux';
+import allReducers from './reducers';
 
-const store = 
+const store = createStore(allReducers);
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <TodoApp />
-    </Provider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
