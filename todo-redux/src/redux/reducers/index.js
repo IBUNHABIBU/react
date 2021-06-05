@@ -1,4 +1,4 @@
-import counterReducer from './counter'
+import counterReducer from './productReducer'
 import loggedReducer from './isLoggIn';
 import { combineReducers } from 'redux';
 
