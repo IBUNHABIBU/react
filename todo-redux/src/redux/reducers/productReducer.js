@@ -1,3 +1,4 @@
+import { actionTypes } from '../constants/actionTypes'
 const initialState = {
     product: [{
         id: 1,

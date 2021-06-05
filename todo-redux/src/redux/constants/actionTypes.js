@@ -3,3 +3,5 @@ const actionTypes = {
     SELECTED_PRODUCTS: 'SELECTED_PRODUCTS',
     REMOVE_SELECTED_PRODUCTS: 'REMOVE_SELECTED_PRODUCTS'
 }
+
+export default actionTypes;

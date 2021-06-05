@@ -1,7 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { createStore } from 'redux';
+import reducers from '../reducers'; // by default it choose to import from the index.js file
 
-export const store = configureStore({
-  reducer: {
-    counter: 1,
-  },
-});
+const store = createStore(reducers, 
+  {},
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
+
+export default store;
