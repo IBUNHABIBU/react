@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './redux/actions/actions';
+import { increment, decrement } from './redux/actions/productActions';
 
 function TodoApp() {
   const counter = useSelector(state => state.counter)
