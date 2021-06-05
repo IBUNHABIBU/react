@@ -6,6 +6,10 @@ import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 
+import { createStore } from 'redux';
+import allReducers from './redux';
+
+const store = 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
