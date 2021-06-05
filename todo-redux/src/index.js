@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import TodoApp from './TodoApp';
+import App from './App';
 import { Provider } from 'react-redux';
 
 import { createStore } from 'redux';
@@ -11,7 +11,7 @@ const myStore = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store = { myStore }>
-      <TodoApp />
+      <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
