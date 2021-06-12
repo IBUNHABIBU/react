@@ -1,6 +1,10 @@
 import  { ActionTypes }  from '../constants/actionTypes'
 const initialState = {
-    product: [],
+    product: [{
+        id: 1,
+        title: "Dipesh",
+        category: "programmer"
+    }],
 }
 const productReducer = (state = initialState, { type, payload } ) => {
     switch(type) {
