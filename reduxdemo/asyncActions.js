@@ -22,7 +22,7 @@ const fetchUsersRequest = () => {
 
 const fetchUsersSuccess = (users) => {
     return {
-        type: FETCH_USERS_REQUEST,
+        type: FETCH_USERS_SUCCESS,
         payload: users
     }
 }
@@ -62,14 +62,14 @@ const reducers = (state = initialState, action) =>{
 
 const fetchUsers =  () => {
     return function(dispatch) {
-        dispatch(fetchUsersRequest)
+        dispatch(fetchUsersRequest())
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then(response => {
-            const users = response.data.map(user => user.id);
+            const users = response.data.map(user => user.name);
             dispatch(fetchUsersSuccess(users))
         })
         .catch( error => {
-            dispatch(fetchUsers(error.message))
+            dispatch(fetchUsersFailure(error.message))
         })
     }
 }
@@ -77,4 +77,4 @@ const store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 store.subscribe( () => {console.log(store.getState()) })
 
-store.dispatch(fetchUsers);
+store.dispatch(fetchUsers());
