@@ -12,7 +12,7 @@ const cakeReducer = (state = initialState, action) => {
                 numberOfCakes: state.numberOfCakes-1
             }
         default:
-            break;
+            return state;
     }
     
 }
