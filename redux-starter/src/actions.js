@@ -4,7 +4,7 @@ export function bugAdded(description) {
     return {
         type: "bugAdded",
         payload: {
-        description: "Bug1"
+        description: "Bug1 string"
     }
     }
 }
