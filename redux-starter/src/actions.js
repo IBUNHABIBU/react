@@ -2,7 +2,7 @@ import * as actions from './actionTypes';
 
 export function bugAdded(description) {
     return {
-        type: BUG_ADDED,
+        type: "bugAdded",
         payload: {
         description: "Bug1"
     }
