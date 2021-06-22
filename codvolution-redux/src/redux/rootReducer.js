@@ -3,8 +3,8 @@ import iceCreamReducer from "./iceCream/iceCreamReducer";
 import cakeReducer from "./cake/cakeReducer";
 
 const rootReducer = combineReducers({
-    cake: iceCreamReducer,
-    iceCream: cakeReducer
+    iceCream: iceCreamReducer,
+    cake: cakeReducer
 })
 
 export default rootReducer;
