@@ -7,8 +7,7 @@ import  DeleteIcon  from '@material-ui/icons/Delete';
 import  CheckBox  from '@material-ui/core/Checkbox';
 import  FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
-import {makeStyles}  from '@material-ui/core/styles';
-// import { classes } from 'istanbul-lib-coverage';
+import {makeStyles, ThemeProvider, createMuiTheme }  from '@material-ui/core/styles';
 
 const useStyle = makeStyles({
   root: {
@@ -18,6 +17,10 @@ const useStyle = makeStyles({
     padding: '0 30px',
     background: 'linear-gradient(45deg, #333, #999)'
   }
+})
+
+const theme = createMuiTheme({
+
 })
 
 function ButtonStyled() {
