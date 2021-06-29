@@ -57,8 +57,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
      <div className="App">
-       <Typography>
+       <Typography variant='h2'>
          Welcome to MUI
+       </Typography>
+       <Typography variant='h4'>
+         Where yo can learn UX design
        </Typography>
       <TextField 
         variant='filled'
