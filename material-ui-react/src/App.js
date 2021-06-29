@@ -10,6 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import {makeStyles, ThemeProvider, createMuiTheme }  from '@material-ui/core/styles';
 import  orange  from '@material-ui/core/colors/orange';
 import 'fontsource-roboto';
+import { Typography } from '@material-ui/core';
 
 const useStyle = makeStyles({
   root: {
@@ -56,6 +57,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
      <div className="App">
+       <Typography>
+         Welcome to MUI
+       </Typography>
       <TextField 
         variant='filled'
         color='secondary'
