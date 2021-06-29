@@ -10,7 +10,9 @@ function CheckBoxExample() {
   const [checked, setchecked] = React.useState(true)
   return (
     <div>
-    <CheckBox />
+      
+    <CheckBox checked = { checked }
+    onChange = { e => setchecked(e.target.checked) } />
     </div>
   )
 }
