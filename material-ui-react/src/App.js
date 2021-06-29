@@ -3,6 +3,15 @@ import { ButtonGroup } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import  SaveIcon  from '@material-ui/icons/Save';
 import  DeleteIcon  from '@material-ui/icons/Delete';
+import  CheckBox  from '@material-ui/core/Checkbox';
+
+function CheckBoxExample() {
+  return (
+    <div>
+    <CheckBox />
+    </div>
+  )
+}
 
 function App() {
   return (
@@ -31,10 +40,10 @@ function App() {
           fontSize: 18
         }
       }>
-        Hello
+        Discard
       </Button>
       </ButtonGroup>
-      
+      <CheckBoxExample />
     </div>
   );
 }
