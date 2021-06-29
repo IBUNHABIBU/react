@@ -8,6 +8,7 @@ import  CheckBox  from '@material-ui/core/Checkbox';
 import  FormControlLabel  from '@material-ui/core/FormControlLabel';
 import TextField from '@material-ui/core/TextField';
 import {makeStyles}  from '@material-ui/core/styles';
+// import { classes } from 'istanbul-lib-coverage';
 
 const useStyle = makeStyles({
   root: {
@@ -20,9 +21,10 @@ const useStyle = makeStyles({
 })
 
 function ButtonStyled() {
+  const classes = useStyle();
   return (
     <div>
-      <Button />
+      <Button className= {classes.root}> Styled</Button>
     </div>
   )
 }
