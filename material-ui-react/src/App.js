@@ -54,7 +54,7 @@ function CheckBoxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-<div className="App">
+     <div className="App">
       <TextField 
         variant='filled'
         color='secondary'
@@ -89,7 +89,7 @@ function App() {
       </ButtonGroup>
       <CheckBoxExample />
       <ButtonStyled />
-    </div>
+      </div>
     </ThemeProvider>
     
   );
