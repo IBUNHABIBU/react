@@ -26,7 +26,11 @@ function CheckBoxExample() {
 function App() {
   return (
     <div className="App">
-      <TextField />
+      <TextField 
+        variant='filled'
+        color='secondary'
+        type='date'
+      />
       <ButtonGroup>
       <Button 
       startIcon = {<SaveIcon />}
