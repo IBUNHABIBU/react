@@ -19,6 +19,13 @@ const useStyle = makeStyles({
   }
 })
 
+function ButtonStyled() {
+  return (
+    <div>
+      <Button />
+    </div>
+  )
+}
 function CheckBoxExample() {
   const [checked, setchecked] = React.useState(true)
   return (
@@ -70,6 +77,7 @@ function App() {
       </Button>
       </ButtonGroup>
       <CheckBoxExample />
+      <ButtonStyled />
     </div>
   );
 }
