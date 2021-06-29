@@ -5,14 +5,19 @@ import { Button } from '@material-ui/core';
 import  SaveIcon  from '@material-ui/icons/Save';
 import  DeleteIcon  from '@material-ui/icons/Delete';
 import  CheckBox  from '@material-ui/core/Checkbox';
+import  FormControlLabel  from '@material-ui/core/FormControlLabel';
 
 function CheckBoxExample() {
   const [checked, setchecked] = React.useState(true)
   return (
     <div>
-      
-    <CheckBox checked = { checked }
-    onChange = { e => setchecked(e.target.checked) } />
+      <FormControlLabel
+      control={<CheckBox checked = { checked } 
+      onChange = { e => setchecked(e.target.checked) } />
+       }
+       label= "Do you Agree"
+       />
+    
     </div>
   )
 }
