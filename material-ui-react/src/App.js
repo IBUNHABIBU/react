@@ -11,6 +11,7 @@ import {makeStyles, ThemeProvider, createMuiTheme }  from '@material-ui/core/sty
 import  orange  from '@material-ui/core/colors/orange';
 import 'fontsource-roboto';
 import { Typography } from '@material-ui/core';
+import Container from '@material-ui/core/Container';
 
 const useStyle = makeStyles({
   root: {
@@ -24,7 +25,9 @@ const useStyle = makeStyles({
 
 const theme = createMuiTheme({
     typography:{
-      fontSize: 18
+      h2: {
+        fontSize: 18
+      },
     },
     palette: { 
       secondary: {
@@ -58,7 +61,8 @@ function CheckBoxExample() {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <Container>
+<ThemeProvider theme={theme}>
      <div className="App">
        <Typography variant='h2'>
          Welcome to MUI
@@ -102,6 +106,8 @@ function App() {
       <ButtonStyled />
       </div>
     </ThemeProvider>
+    </Container>
+    
     
   );
 }
