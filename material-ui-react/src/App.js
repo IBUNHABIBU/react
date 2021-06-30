@@ -17,7 +17,7 @@ import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 import  Toolbar  from '@material-ui/core/Toolbar';
 import IconButton  from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/MenuIcon';
+import  MenuIcon  from '@material-ui/icons/Menu';
 
 const useStyle = makeStyles({
   root: {
@@ -70,14 +70,17 @@ function App() {
     <Container maxWid='sm'>
 <ThemeProvider theme={theme}>
      <div className="App">
-       <AppBar>
-         <ToolBar>
+       <AppBar color='secondary'>
+         <Toolbar >
            <IconButton>
-             <MenuIcon>
-               
-             </MenuIcon>
+             <MenuIcon />
+
            </IconButton>
-         </ToolBar>
+            <Typography>
+              MUI testing
+            </Typography>
+            <Button>Log in</Button>
+         </Toolbar>
        </AppBar>
        <Typography variant='h2'>
          Welcome to MUI
