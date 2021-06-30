@@ -23,6 +23,9 @@ const useStyle = makeStyles({
 })
 
 const theme = createMuiTheme({
+    typography:{
+      fontSize: 18
+    },
     palette: { 
       secondary: {
         main: orange[500],
@@ -60,7 +63,7 @@ function App() {
        <Typography variant='h2'>
          Welcome to MUI
        </Typography>
-       <Typography variant='h4'>
+       <Typography variant='subtitle1'>
          Where yo can learn UX design
        </Typography>
       <TextField 
