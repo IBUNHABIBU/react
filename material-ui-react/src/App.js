@@ -106,14 +106,30 @@ function App() {
       </ButtonGroup>
       <CheckBoxExample />
       <ButtonStyled />
-
-      <Grid>
+      <Grid container spacing={1}>
+      <Grid item>
         <Paper style={{ 
           height: 75,
           width: 50,
           backgroundColor: 'red'
         }} />
       </Grid>
+      <Grid item>
+        <Paper style={{ 
+          height: 75,
+          width: 50,
+          backgroundColor: 'red'
+        }} />
+      </Grid>
+      <Grid item>
+        <Paper style={{ 
+          height: 75,
+          width: 50,
+          backgroundColor: 'red'
+        }} />
+      </Grid>
+      </Grid>
+      
       </div>
     </ThemeProvider>
     </Container>
