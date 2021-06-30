@@ -12,6 +12,8 @@ import  orange  from '@material-ui/core/colors/orange';
 import 'fontsource-roboto';
 import { Typography } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyle = makeStyles({
   root: {
@@ -61,7 +63,7 @@ function CheckBoxExample() {
 
 function App() {
   return (
-    <Container>
+    <Container maxWid='sm'>
 <ThemeProvider theme={theme}>
      <div className="App">
        <Typography variant='h2'>
@@ -104,6 +106,14 @@ function App() {
       </ButtonGroup>
       <CheckBoxExample />
       <ButtonStyled />
+
+      <Grid>
+        <Paper style={{ 
+          height: 75,
+          width: 50,
+          backgroundColor: 'red'
+        }} />
+      </Grid>
       </div>
     </ThemeProvider>
     </Container>
