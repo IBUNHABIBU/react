@@ -6,9 +6,15 @@ import { PhotoCamera } from '@material-ui/icons';
 
 const App = () => {
   return (
-    <div>
-      <Typography variant="h1">Hello</Typography>
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar>
+        <PhotoCamera />
+        <Typography variant='h6' >
+          Photo Album 
+        </Typography>
+      </AppBar>
+    </>
   )
 }
 
