@@ -5,6 +5,7 @@
     - Component api
         - contain complete list of props, css rules, classes with no examples
         - Full documentation of all the props u can put
+        - we need to read the API documentation
 1. Typography - Any text element from h1, p, 
         has props like
         - variant - h1, h2, p etc
