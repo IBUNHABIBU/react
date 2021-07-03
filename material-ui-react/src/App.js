@@ -9,15 +9,19 @@ const App = () => {
     <>
       <CssBaseline />
       <AppBar position ='relative'>
+        <Toolbar>
         <PhotoCamera />
         <Typography variant='h6' >
           Photo Album 
         </Typography>
+        </Toolbar>
       </AppBar>
       <main>
-        <Container>
-          
-        </Container>
+        <div>
+          <Container maxWidth='sm'>
+              <Typography variant="h2" align="center" color="textPrimary" gutterBottom>Photo Album</Typography>
+          </Container>
+        </div>
       </main>
     </>
   )
