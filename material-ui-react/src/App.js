@@ -8,12 +8,17 @@ const App = () => {
   return (
     <>
       <CssBaseline />
-      <AppBar>
+      <AppBar position ='relative'>
         <PhotoCamera />
         <Typography variant='h6' >
           Photo Album 
         </Typography>
       </AppBar>
+      <main>
+        <Container>
+          
+        </Container>
+      </main>
     </>
   )
 }
