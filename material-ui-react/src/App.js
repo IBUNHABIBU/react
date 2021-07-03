@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyle = makeStyles((theme) => ({
     para: {
-
+        backgroundColor: theme.palette.background.paper
     }
 }))
 
