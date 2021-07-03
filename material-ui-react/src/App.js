@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyle = makeStyles((theme) => ({
     para: {
-        backgroundColor: theme.palette.background.paper
+      backgroundColor: theme.palette.background.paper,
     }
 }))
 
@@ -29,8 +29,8 @@ const App = () => {
       <main>
         <div>
           <Container maxWidth='sm'>
-              <Typography variant="h2" align="center" color="textPrimary" gutterBottom style={{ marginTop: '100px'}}>Photo Album</Typography>
-              <Typography variant="h5" className={classes.para} align='center' color='textSecondary' paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit
+              <Typography variant="h2" align="center" color="textPrimary" gutterBottom className={classes.para} >Photo Album</Typography>
+              <Typography variant="h5" style={{ marginTop: '100px'}} align='center' color='textSecondary' paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit
                 . Unde error, fugit aliquid impedit, nemo minima dolore porro magni 
                 facilis voluptate molestiae. Non similique, vitae pariatur sunt delectus quas molestias mollitia.</Typography>
 
