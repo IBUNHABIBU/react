@@ -6,3 +6,6 @@
 2. Material ui template
      https://material-ui.com/getting-started/templates/
      https://material-ui.com/getting-started/templates/album/
+
+3. CssBaseline 
+    default styling 
