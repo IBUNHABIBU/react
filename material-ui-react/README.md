@@ -3,7 +3,7 @@
     - Components
         - you will find demo , explanation and example, we use most of time to research how to use material ui
     - Component api
-        - contain complete list of props, css rules, classes with no examples
+        - contain complete list of props, css rules, classes with no examples you can read more about them
         - Full documentation of all the props u can put
         - we need to read the API documentation
 1. Typography - Any text element from h1, p, 
@@ -16,3 +16,6 @@
 
 3. CssBaseline 
     default styling 
+
+### Bonus
+Taskade project management tool
