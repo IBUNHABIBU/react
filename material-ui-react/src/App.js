@@ -31,6 +31,9 @@ const App = () => {
                     <Grid item>
                       <Button variant="contained" color="primary"> see my photos</Button>
                     </Grid>
+                    <Grid item>
+                      <Button variant="outlined" color="primary"> Go to store</Button>
+                    </Grid>
                   </Grid>
                 </div>
           </Container>
