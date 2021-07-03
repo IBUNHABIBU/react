@@ -27,6 +27,11 @@ const App = () => {
                 facilis voluptate molestiae. Non similique, vitae pariatur sunt delectus quas molestias mollitia.</Typography>
           </Container>
         </div>
+        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+           <Button>One</Button>
+           <Button>Two</Button>
+           <Button>Three</Button>
+        </ButtonGroup>
       </main>
     </>
   )
