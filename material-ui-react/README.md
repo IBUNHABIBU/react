@@ -4,6 +4,7 @@
         - you will find demo , explanation and example, we use most of time to research how to use material ui
     - Component api
         - contain complete list of props, css rules, classes with no examples
+        - Full documentation of all the props u can put
 1. Typography - Any text element from h1, p, 
         has props like
         - variant - h1, h2, p etc
