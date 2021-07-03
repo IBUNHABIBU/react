@@ -25,13 +25,17 @@ const App = () => {
               <Typography variant="h5" align='center' color='textSecondary' paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit
                 . Unde error, fugit aliquid impedit, nemo minima dolore porro magni 
                 facilis voluptate molestiae. Non similique, vitae pariatur sunt delectus quas molestias mollitia.</Typography>
+
+                <div>
+                  <Grid container spacing={2} justify="center">
+                    <Grid item>
+                      <Button variant="contained" color="primary"> see my photos</Button>
+                    </Grid>
+                  </Grid>
+                </div>
           </Container>
         </div>
-        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-           <Button>One</Button>
-           <Button>Two</Button>
-           <Button>Three</Button>
-        </ButtonGroup>
+        
       </main>
     </>
   )
