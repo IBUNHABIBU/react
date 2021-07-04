@@ -51,7 +51,13 @@ const App = () => {
         </div>
         <Container maxWidth="md" className={classes.cardGrid} >
            <Grid container spacing={1} >
-             
+             <Card className={classes.card}>
+                <CardMedia
+                  title="Random"
+                  image="https://source.unsplash.com/random"
+                  className={classes.cardMedia}
+                />
+             </Card>
            </Grid>
         </Container>
       </main>
