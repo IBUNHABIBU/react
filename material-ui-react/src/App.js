@@ -6,6 +6,7 @@ import { PhotoCamera } from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
+import myStyle from './stylesheets/style';
 
 const useStyle = makeStyles((theme) => ({
     para: {
@@ -15,13 +16,14 @@ const useStyle = makeStyles((theme) => ({
 }))
 
 const App = () => {
-  const classes = useStyle();
+  const custom = useStyle();
+  const classes = myStyle();
   return (
     <>
       <CssBaseline />
       <AppBar position ='relative'>
         <Toolbar>
-        <PhotoCamera />
+        <PhotoCamera className={classes.icon} />
         <Typography variant='h6' >
           Photo Album 
         </Typography>
@@ -31,14 +33,14 @@ const App = () => {
         <div>
           <Container maxWidth='sm'>
               <Typography variant="h2" align="center" color="textPrimary" gutterBottom style={{ marginTop: '100px'}}>Photo Album</Typography>
-              <Typography variant="h5" className={classes.para} align='center' color='textSecondary' paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit
+              <Typography variant="h5" className={custom.para} align='center' color='textSecondary' paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit
                 . Unde error, fugit aliquid impedit, nemo minima dolore porro magni 
                 facilis voluptate molestiae. Non similique, vitae pariatur sunt delectus quas molestias mollitia.</Typography>
 
-                <div>
+                <div className={classes.button}>
                   <Grid container spacing={2} justify="center">
                     <Grid item>
-                      <Button variant="contained" color="primary"> see my photos</Button>
+                      <Button variant="contained" color="primary" > see my photos</Button>
                     </Grid>
                     <Grid item>
                       <Button variant="outlined" color="primary"> Go to store</Button>
