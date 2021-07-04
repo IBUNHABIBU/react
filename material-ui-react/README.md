@@ -23,3 +23,8 @@
 
 ### Bonus
 Taskade project management tool
+
+- I used map method to generate many html element
+    
+     i.e `let card = [1,2,3,4] `
+         ` card.map(() => <div> Hello word </div>) `
