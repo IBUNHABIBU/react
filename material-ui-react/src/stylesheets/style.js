@@ -2,7 +2,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-const myStyle = makeStyles(() => ({
+const myStyle = makeStyles((theme) => ({
     icon: {
         marginRight: '20px',
     },
@@ -23,6 +23,10 @@ const myStyle = makeStyles(() => ({
     }, 
     cardContent: {
         flexGrow: 1
+    }, 
+    footer: {
+        backgroundColor: theme.palette.background.paper,
+        padding: '50px 0'
     }
 }))
 

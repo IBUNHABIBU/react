@@ -80,6 +80,9 @@ const App = () => {
            </Grid>
         </Container>
       </main>
+      <footer className={classes.footer}>
+
+      </footer>
     </>
   )
 }
