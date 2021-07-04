@@ -50,7 +50,7 @@ const App = () => {
           </Container>
         </div>
         <Container maxWidth="md" className={classes.cardGrid} >
-           <Grid container spacing={4} >
+           <Grid container spacing={2} >
              <Grid item>
                <Card className={classes.card}>
                   <CardMedia
