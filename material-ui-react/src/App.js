@@ -18,6 +18,7 @@ const useStyle = makeStyles((theme) => ({
 const App = () => {
   const custom = useStyle();
   const classes = myStyle();
+  const res= [1,2,3,4]
   return (
     <>
       <CssBaseline />
@@ -51,53 +52,31 @@ const App = () => {
         </div>
         <Container maxWidth="md" className={classes.cardGrid} >
            <Grid container spacing={2} >
+            {res.map(() => <Grid item>
+               <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    title="Random"
+                    image="https://source.unsplash.com/random"
+               
+                  />
+               
+               <CardContent className={ classes.cardContent }>
+                 <Typography gutterBottom variant="h4">
+                        Hello
+                 </Typography>
+                 <Typography>
+                   this is the paragraph to explain the picture that you see above in details
+                 </Typography>
+               </CardContent>
+               <CardActions>
+                 <Button size="small" color="primary">View</Button>
+                 <Button size="small" color="primary">Edit</Button>
+               </CardActions>
+               </Card>
+             </Grid>
+             )} 
              
-             <Grid item>
-               <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    title="Random"
-                    image="https://source.unsplash.com/random"
-               
-                  />
-               
-               <CardContent className={ classes.cardContent }>
-                 <Typography gutterBottom variant="h4">
-                        Hello
-                 </Typography>
-                 <Typography>
-                   this is the paragraph to explain the picture that you see above in details
-                 </Typography>
-               </CardContent>
-               <CardActions>
-                 <Button size="small" color="primary">View</Button>
-                 <Button size="small" color="primary">Edit</Button>
-               </CardActions>
-               </Card>
-             </Grid>
-             <Grid item>
-               <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    title="Random"
-                    image="https://source.unsplash.com/random"
-               
-                  />
-               
-               <CardContent className={ classes.cardContent }>
-                 <Typography gutterBottom variant="h4">
-                        Hello
-                 </Typography>
-                 <Typography>
-                   this is the paragraph to explain the picture that you see above in details
-                 </Typography>
-               </CardContent>
-               <CardActions>
-                 <Button size="small" color="primary">View</Button>
-                 <Button size="small" color="primary">Edit</Button>
-               </CardActions>
-               </Card>
-             </Grid>
            </Grid>
         </Container>
       </main>
