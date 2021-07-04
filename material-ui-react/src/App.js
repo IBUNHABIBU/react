@@ -18,7 +18,7 @@ const useStyle = makeStyles((theme) => ({
 const App = () => {
   const custom = useStyle();
   const classes = myStyle();
-  const res= [1,2,3,4]
+  const res= [1,2,3,4,5,6]
   return (
     <>
       <CssBaseline />
@@ -52,7 +52,7 @@ const App = () => {
         </div>
         <Container maxWidth="md" className={classes.cardGrid} >
            <Grid container spacing={2} >
-            {res.map((res) => <Grid item key={res}>
+            {res.map((res) => <Grid item key={res} xs={12} sm={6} md={4} >
                <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
