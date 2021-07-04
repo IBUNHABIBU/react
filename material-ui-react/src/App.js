@@ -59,11 +59,18 @@ const App = () => {
                  
                 />
              </Card>
-             <CardContent>
+             <CardContent className={ classes.cardContent }>
+               <Typography gutterBottom variant="h4">
+                      Hello
+               </Typography>
                <Typography>
-Hello
+                 this is the paragraph to explain the picture that you see above in details
                </Typography>
              </CardContent>
+             <CardActions>
+               <Button size="small" color="primary"></Button>
+               <Button></Button>
+             </CardActions>
            </Grid>
         </Container>
       </main>
