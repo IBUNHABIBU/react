@@ -84,6 +84,9 @@ const App = () => {
           <Typography variant="h6" color="initial" align="center" gutterBottom>
             Footer
           </Typography>
+          <Typography variant="subtitle1" color="initial">
+            
+          </Typography>
       </footer>
     </>
   )
