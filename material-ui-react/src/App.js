@@ -68,8 +68,8 @@ const App = () => {
                </Typography>
              </CardContent>
              <CardActions>
-               <Button size="small" color="primary"></Button>
-               <Button></Button>
+               <Button size="small" color="primary">View</Button>
+               <Button size="small" color="primary">Edit</Button>
              </CardActions>
            </Grid>
         </Container>
