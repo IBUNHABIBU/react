@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyle = makeStyles((theme) => ({
     para: {
       backgroundColor: theme.palette.primary.light,
-      padding: theme.spacing(8, 0, 6)
+      padding: theme.spacing(8, 5, 6)
     }
 }))
 
