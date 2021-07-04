@@ -59,7 +59,7 @@ const App = () => {
                     image="https://source.unsplash.com/random"
                
                   />
-               </Card>
+               
                <CardContent className={ classes.cardContent }>
                  <Typography gutterBottom variant="h4">
                         Hello
@@ -72,6 +72,76 @@ const App = () => {
                  <Button size="small" color="primary">View</Button>
                  <Button size="small" color="primary">Edit</Button>
                </CardActions>
+               </Card>
+             </Grid>
+             <Grid item>
+               <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    title="Random"
+                    image="https://source.unsplash.com/random"
+               
+                  />
+               
+               <CardContent className={ classes.cardContent }>
+                 <Typography gutterBottom variant="h4">
+                        Hello
+                 </Typography>
+                 <Typography>
+                   this is the paragraph to explain the picture that you see above in details
+                 </Typography>
+               </CardContent>
+               <CardActions>
+                 <Button size="small" color="primary">View</Button>
+                 <Button size="small" color="primary">Edit</Button>
+               </CardActions>
+               </Card>
+             </Grid>
+             <Grid item>
+               <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    title="Random"
+                    image="https://source.unsplash.com/random"
+               
+                  />
+               
+               <CardContent className={ classes.cardContent }>
+                 <Typography gutterBottom variant="h4">
+                        Hello
+                 </Typography>
+                 <Typography>
+                   this is the paragraph to explain the picture that you see above in details
+                 </Typography>
+               </CardContent>
+               <CardActions>
+                 <Button size="small" color="primary">View</Button>
+                 <Button size="small" color="primary">Edit</Button>
+               </CardActions>
+               </Card>
+             </Grid>
+             <Grid item>
+               <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    title="Random"
+                    image="https://source.unsplash.com/random"
+               
+                  />
+               
+               <CardContent className={ classes.cardContent }>
+                 <Typography gutterBottom variant="h4">
+                        Hello
+                 </Typography>
+                 <Typography>
+                   this is the paragraph to explain the picture that you see above in details
+                 </Typography>
+               </CardContent>
+               <CardActions>
+                 <Button size="small" color="primary">View</Button>
+                 <Button size="small" color="primary">Edit</Button>
+               </CardActions>
+               </Card>
              </Grid>
            </Grid>
         </Container>
