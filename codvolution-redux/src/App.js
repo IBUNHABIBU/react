@@ -12,12 +12,13 @@ function App() {
   return (
     <div className="App">
        <Provider store = { store }>
+       <ItemContainer cake/>
+         <ItemContainer  />
          <HooksCakeContainer />
          <CakeContainer />
          <IceCreamContainer />
          <NewCakeContainer />
-         <ItemContainer cake/>
-         <ItemContainer  />
+         
        </Provider>
     </div>
   );
