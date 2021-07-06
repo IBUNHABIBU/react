@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { buyCake } from '../redux'
+import { useState } from 'react';
 
 function NewCakeContainer(props) {
+    const [number, setNumber] = useState(1)
     return (
         <div>
             <h1>Number of cakes: {props.numberOfCakes}</h1>
