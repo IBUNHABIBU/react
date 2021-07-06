@@ -8,4 +8,8 @@ const ItemContainer = () => {
     )
 }
 
+const mapStateToProps = () => {
+
+}
+
 export default ItemContainer
