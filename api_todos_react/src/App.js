@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <h1>Todo API</h1>
+       <hr/>
       </header>
     </div>
   );
