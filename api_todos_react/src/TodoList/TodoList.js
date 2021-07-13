@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 const api_url = 'https://localhost:3001/api/v1/todos';
 
-const TodoList = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+export default class TodoList extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             items: []
+        }
+    }
+    
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
-
-export default TodoList
