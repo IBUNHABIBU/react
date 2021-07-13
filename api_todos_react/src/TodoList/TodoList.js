@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TodoForm from './TodoForm';
 
 const api_url = 'https://localhost:3001/api/v1/todos';
 
@@ -14,7 +15,7 @@ export default class TodoList extends Component {
     render() {
         return (
             <div>
-                
+                <TodoForm />
             </div>
         )
     }
