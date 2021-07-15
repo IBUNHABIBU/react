@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TodoForm from './TodoForm';
 
-const api_url = 'https://localhost:3001/api/v1/todos';
+const api_url = 'http://localhost:3001/api/v1/todos';
 
 export default class TodoList extends Component {
     constructor(props) {
@@ -27,9 +27,15 @@ export default class TodoList extends Component {
     }
 
     render() {
+        console.log(this.state)
         return (
             <div>
                 <TodoForm />
+                <ul>
+                    {this.state.items.map(item => {
+                        return <li key={item.id}>{item.task}</li>
+                    })}
+                </ul>
             </div>
         )
     }
