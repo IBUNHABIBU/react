@@ -22,7 +22,9 @@ export default class TodoForm extends Component {
                     id="task-input" 
                     label="Task Name"
                     type="text" 
-                    variant ="outlined" />
+                    variant ="outlined" 
+                    name="todo[task]"
+                    onChange={this.handleChange}/>
                 </form>
             </div>
         )
