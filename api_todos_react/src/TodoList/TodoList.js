@@ -19,8 +19,10 @@ export default class TodoList extends Component {
     getTasks() {
       fetch(api_url)
       .then(response => response.json())
-      .then(responst_item => {
-          this.setState()
+      .then(response_item => {
+          this.setState({
+              items: response_item
+          })
       })
     }
 
