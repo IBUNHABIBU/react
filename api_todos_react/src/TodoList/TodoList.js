@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TodoForm from './TodoForm';
+import TodoItem from './TodoItem';
 
 const api_url = 'http://localhost:3001/api/v1/todos';
 
