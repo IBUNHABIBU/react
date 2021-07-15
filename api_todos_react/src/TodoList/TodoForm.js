@@ -18,7 +18,11 @@ export default class TodoForm extends Component {
                 <form onSubmit={this.handleSubmit}
                 id="todo_form" 
                 autoComplete="off">
-                    <TextField></TextField>
+                    <TextField 
+                    id="task-input" 
+                    label="Task Name"
+                    type="text" 
+                    variant ="outlined" />
                 </form>
             </div>
         )
