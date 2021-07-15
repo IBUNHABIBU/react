@@ -12,6 +12,14 @@ export default class TodoList extends Component {
         }
     }
     
+    componentDidMount(){
+        this.getTasks();
+    }
+
+    getTasks() {
+
+    }
+    
     render() {
         return (
             <div>
