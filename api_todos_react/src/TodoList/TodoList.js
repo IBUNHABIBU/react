@@ -32,9 +32,9 @@ export default class TodoList extends Component {
             <div>
                 <TodoForm />
                 <ul>
-                    {this.state.items.map(item => {
-                        return <li key={item.id}>{item.task}</li>
-                    })}
+                    {this.state.items.map(item => (
+                        <TodoItem key={item.id} item={item} />
+        ))}
                 </ul>
             </div>
         )
