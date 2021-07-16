@@ -18,7 +18,12 @@ export default class TodoForm extends Component {
     }
     async formSubmit(formData) {
         var data = new FormData(formData)
-        await 
+        await fetch(this.state.api_url, {
+            method: "POST",
+            mode: "cors",
+            body: data
+        }).then(response => response.json())
+        .then(response => this.props.updateToDoList(response))
     }
     render() {
         return (
