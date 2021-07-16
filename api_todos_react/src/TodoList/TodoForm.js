@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextField } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
 
 export default class TodoForm extends Component {
     constructor(props) {
@@ -25,6 +25,11 @@ export default class TodoForm extends Component {
                     variant ="outlined" 
                     name="todo[task]"
                     onChange={this.handleChange}/>
+                    <Button
+                     variant="contained"
+                     color="primary"
+                    >Add Task
+                    <Button>
                 </form>
             </div>
         )
