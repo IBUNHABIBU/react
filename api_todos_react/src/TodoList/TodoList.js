@@ -38,7 +38,7 @@ export default class TodoList extends Component {
         console.log(this.state)
         return (
             <div>
-                <TodoForm />
+                <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
                 <ul>
                     {this.state.items.map(item => (
                         <TodoItem key={item.id} item={item} />
