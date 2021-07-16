@@ -12,11 +12,7 @@ export default class TodoForm extends Component {
         this.handleChange=this.handleChange.bind(this)
         this.handleSubmit=this.handleSubmit.bind(this)
     }
-    handleSubmit(e) {
-        e.preventDefault();
-        this.formSubmit(e.target)
-        console.log(this.state)
-    }
+    
     async formSubmit(formData) {
         var data = new FormData(formData)
         await fetch(this.state.api_url, {
@@ -30,6 +26,10 @@ export default class TodoForm extends Component {
         this.setState({
             task: e.target.value
         })
+    }
+    handleSubmit(e) {
+        e.preventDefault();
+        this.formSubmit(e.target)
     }
     render() {
         return (
@@ -48,6 +48,7 @@ export default class TodoForm extends Component {
                     <Button
                      variant="contained"
                      color="primary"
+                     type='submit'
                     > Add Task
                     </Button>
                 </form>
