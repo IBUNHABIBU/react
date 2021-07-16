@@ -28,8 +28,8 @@ export default class TodoForm extends Component {
                     <Button
                      variant="contained"
                      color="primary"
-                    >Add Task
-                    <Button>
+                    > Add Task
+                    </Button>
                 </form>
             </div>
         )
