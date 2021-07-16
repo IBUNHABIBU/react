@@ -9,8 +9,17 @@ export default class TodoForm extends Component {
              api_url: props.api_url,
              task: "",
         }
+        this.handleChange=this.handleChange.bind(this)
+        this.handleSubmit=this.handleSubmit.bind(this)
     }
-    
+    handleSubmit(e) {
+        e.preventDefault();
+        this.formSubmit(e.target)
+    }
+    async formSubmit(formData) {
+        var data = new FormData(formData)
+        await 
+    }
     render() {
         return (
             <div>
