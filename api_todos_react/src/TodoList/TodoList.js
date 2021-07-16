@@ -11,6 +11,7 @@ export default class TodoList extends Component {
         this.state = {
              items: []
         }
+        this.updateToDoList = this.updateToDoList.bind(this)
     }
     
     componentDidMount(){
