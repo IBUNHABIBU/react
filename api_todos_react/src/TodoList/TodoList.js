@@ -35,7 +35,6 @@ export default class TodoList extends Component {
         })
     }
     render() {
-        console.log(this.state)
         return (
             <div>
                 <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />

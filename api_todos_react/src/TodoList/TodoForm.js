@@ -15,6 +15,7 @@ export default class TodoForm extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.formSubmit(e.target)
+        console.log(this.state)
     }
     async formSubmit(formData) {
         var data = new FormData(formData)
@@ -26,7 +27,9 @@ export default class TodoForm extends Component {
         .then(response => this.props.updateToDoList(response))
     }
     handleChange(e){
-        e.preventDefault();
+        this.setState({
+            task: e.target.value
+        })
     }
     render() {
         return (
