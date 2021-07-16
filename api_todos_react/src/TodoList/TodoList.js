@@ -26,7 +26,13 @@ export default class TodoList extends Component {
           })
       })
     }
-
+    updateToDoList(item){
+        let _items = this.state.items
+        _items.unshift(item);
+        this.setState({
+            items: _items,
+        })
+    }
     render() {
         console.log(this.state)
         return (
