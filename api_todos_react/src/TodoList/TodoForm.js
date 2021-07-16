@@ -25,6 +25,9 @@ export default class TodoForm extends Component {
         }).then(response => response.json())
         .then(response => this.props.updateToDoList(response))
     }
+    handleChange(e){
+        e.preventDefault();
+    }
     render() {
         return (
             <div>
