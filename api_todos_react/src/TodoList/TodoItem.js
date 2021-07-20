@@ -10,11 +10,12 @@ const useStyle = makeStyles({
 })
 
 const TodoItem = (props) => {
-    const classes = useStyle()
+    const classes = useStyle();
+    
     return (
         <Grid container spacing={0}>
             <Grid item xs={9}>
-                <Paper elevation={1}>
+                <Paper elevation={1} className={classes.root}>
                     {props.item.task}
                 </Paper>
             </Grid>

@@ -41,11 +41,11 @@ export default class TodoList extends Component {
                 <Grid item xs={12}>
                   <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
                 </Grid>
-                    <ul>
+                    <Grid item xs={12}>
                         {this.state.items.map(item => (
                           <TodoItem key={item.id} item={item} />
                         ))}
-                    </ul>
+                    </Grid>
             </Grid>
         )
     }
