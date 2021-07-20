@@ -1,12 +1,13 @@
 import React from 'react'
+import { Grid, Paper } from '@material-ui/core'
 
 const TodoItem = (props) => {
     return (
-        <div>
-            <li>
+        <Grid container spacing={3}>
+            <Paper>
                 {props.item.task}
-            </li>
-        </div>
+            </Paper>
+        </Grid>
     )
 }
 
