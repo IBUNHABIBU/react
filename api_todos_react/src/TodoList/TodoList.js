@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
+import { Grid } from '@material-ui/core';
 
 const api_url = 'http://localhost:3001/api/v1/todos';
 
@@ -36,14 +37,16 @@ export default class TodoList extends Component {
     }
     render() {
         return (
-            <div>
-                <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
-                <ul>
-                    {this.state.items.map(item => (
-                        <TodoItem key={item.id} item={item} />
-        ))}
-                </ul>
-            </div>
+            <Grid container spacing={3}>
+                <Grid>
+                    <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
+                    <ul>
+                        {this.state.items.map(item => (
+                          <TodoItem key={item.id} item={item} />
+                        ))}
+                    </ul>
+                </Grid>
+            </Grid>
         )
     }
 }
