@@ -1,6 +1,7 @@
 import React from 'react';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Paper, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons';
 
 const useStyle = makeStyles({
     root: {
@@ -18,6 +19,15 @@ const TodoItem = (props) => {
                 <Paper elevation={1} className={classes.root}>
                     {props.item.task}
                     <hr />
+                    <Button
+                    variant="contained"
+                    color="secondary"
+                    size="small"
+                    startIcon={ <DeleteIcon /> }
+                    onClick
+                    >
+                        Delete
+                    </Button>
                 </Paper>
             </Grid>
         </Grid>
