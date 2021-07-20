@@ -38,14 +38,14 @@ export default class TodoList extends Component {
     render() {
         return (
             <Grid container spacing={3}>
-                <Grid>
-                    <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
+                <Grid item xs={12}>
+                  <TodoForm api_url={api_url} updateToDoList={this.updateToDoList} />
+                </Grid>
                     <ul>
                         {this.state.items.map(item => (
                           <TodoItem key={item.id} item={item} />
                         ))}
                     </ul>
-                </Grid>
             </Grid>
         )
     }
