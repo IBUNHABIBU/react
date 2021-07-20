@@ -17,6 +17,7 @@ const TodoItem = (props) => {
             <Grid item xs={9}>
                 <Paper elevation={1} className={classes.root}>
                     {props.item.task}
+                    <hr />
                 </Paper>
             </Grid>
         </Grid>
