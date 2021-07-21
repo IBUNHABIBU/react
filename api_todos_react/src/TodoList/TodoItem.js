@@ -13,7 +13,7 @@ const useStyle = makeStyles({
 const TodoItem = (props) => {
     const classes = useStyle();
     const handleDelete = () => {
-        
+        props.deleteItem(props.item)
     }
     return (
         <Grid container spacing={3}>

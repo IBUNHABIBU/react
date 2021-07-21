@@ -35,6 +35,14 @@ export default class TodoList extends Component {
             items: _items,
         })
     }
+
+    deleteItem(item) {
+        // delete remotetely
+        // localhost:3001/api/v1/todos/id
+        let deleteUrl = api_url +   `/${item.id}`
+        //  delete in the browser
+        
+    }
     render() {
         return (
             <Grid container spacing={3}>
