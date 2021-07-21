@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { TextField, Button, Grid } from '@material-ui/core';
+import { TextField, Button, Grid, TextareaAutosize  } from '@material-ui/core';
 
 export default class TodoForm extends Component {
     constructor(props) {
         super(props)
-
         this.state = {
              api_url: props.api_url,
              task: "",
@@ -39,7 +38,7 @@ export default class TodoForm extends Component {
                         id="todo_form"
                         autoComplete="off">
                          <Grid container>
-                            <Grid item xs={10}>
+                            <Grid item xs={12}>
                                 <TextField
                                 id="task-input"
                                 label="Task Name"
@@ -49,6 +48,15 @@ export default class TodoForm extends Component {
                                 fullWidth
                                 onChange={this.handleChange} 
                                 />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextareaAutosize
+                                    id="body_input"
+                                    label="Task body"
+                                    variant = "outlined"
+                                    type="text"
+                                    name="todo[body]"
+                                 />
                             </Grid>
                             <Grid item xs={2}>
                                 <Button

@@ -21,6 +21,8 @@ const TodoItem = (props) => {
                 <Paper elevation={1} className={classes.root}>
                     {props.item.task}
                     <hr />
+                    {props.item.body}
+                    <hr />
                     <Button
                     variant="contained"
                     color="secondary"
