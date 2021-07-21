@@ -11,7 +11,8 @@ export default class TodoList extends Component {
         this.state = {
              items: []
         }
-        this.updateToDoList = this.updateToDoList.bind(this)
+        this.updateToDoList = this.updateToDoList.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
     }
 
     componentDidMount(){
@@ -42,7 +43,10 @@ export default class TodoList extends Component {
                 </Grid>
                     <Grid item xs={12}>
                         {this.state.items.map(item => (
-                          <TodoItem key={item.id} item={item} />
+                          <TodoItem 
+                          key={item.id} 
+                          item={item} 
+                          deleteItem = {this.deleteItem} />
                         ))}
                     </Grid>
             </Grid>

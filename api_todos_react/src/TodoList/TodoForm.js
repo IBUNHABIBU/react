@@ -55,7 +55,7 @@ export default class TodoForm extends Component {
                                  variant="contained"
                                  color="primary"
                                  type='submit'
-                                 style={{ height: "100%" }} 
+                                 style={{ height: "100%", width: '100%' }} 
                                 >
                                 Add Task
                                 </Button>
