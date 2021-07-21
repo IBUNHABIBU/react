@@ -56,7 +56,9 @@ export default class TodoForm extends Component {
                                     variant = "outlined"
                                     type="text"
                                     name="todo[body]"
-                                 />
+                                    rowsMin={3}
+                                    style={{ width: '100%'}}
+                                />
                             </Grid>
                             <Grid item xs={2}>
                                 <Button
