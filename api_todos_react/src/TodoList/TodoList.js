@@ -39,7 +39,17 @@ export default class TodoList extends Component {
     deleteItem(item) {
         // delete remotetely
         // localhost:3001/api/v1/todos/id
-        let deleteUrl = api_url +   `/${item.id}`
+        let deleteURL = api_url +   `/${item.id}`;
+        fetch(deleteURL, {
+            method: 'DELETE',
+        }).then(() => {
+            var _items = this.state.items;
+            var index = _items.indexOf(item);
+            _items.splice(index, 1);
+            this.setState({
+                item: _items,
+            })
+        })
         //  delete in the browser
         
     }
