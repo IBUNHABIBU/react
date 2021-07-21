@@ -8,13 +8,12 @@ const api_url = 'http://localhost:3001/api/v1/todos';
 export default class TodoList extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              items: []
         }
         this.updateToDoList = this.updateToDoList.bind(this)
     }
-    
+
     componentDidMount(){
         this.getTasks();
     }
