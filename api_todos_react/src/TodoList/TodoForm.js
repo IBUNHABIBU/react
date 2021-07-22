@@ -4,10 +4,14 @@ import { TextField, Button, Grid, TextareaAutosize  } from '@material-ui/core';
 export default class TodoForm extends Component {
     constructor(props) {
         super(props)
+        let defaultTask = "";
+        let defaultBody = "";
         this.state = {
              api_url: props.api_url,
              task: "",
              body: "",
+             defaultTaskValue: this.defaultTask,
+             defaultBodyValue: this.defaultBody,
         }
         this.handleTaskChange=this.handleTaskChange.bind(this)
         this.handleBodyChange=this.handleBodyChange.bind(this)
