@@ -8,10 +8,10 @@ export default class TodoForm extends Component {
         let defaultBody = "";
         this.state = {
              api_url: props.api_url,
-             task: "",
-             body: "",
-             defaultTaskValue: this.defaultTask,
-             defaultBodyValue: this.defaultBody,
+             task: defaultTask,
+             body: defaultBody,
+             defaultTaskValue: defaultTask,
+             defaultBodyValue: defaultBody,
         }
         this.handleTaskChange=this.handleTaskChange.bind(this)
         this.handleBodyChange=this.handleBodyChange.bind(this)
@@ -27,8 +27,8 @@ export default class TodoForm extends Component {
         }).then(response => response.json())
         .then(response => this.props.updateToDoList(response))
         this.setState({
-            task: "",
-            body: ""
+            task: this.state.defaultTaskValue,
+            body: this.state.defaultBodyValue,
         })
     }
 
