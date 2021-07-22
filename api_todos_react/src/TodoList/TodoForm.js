@@ -22,6 +22,10 @@ export default class TodoForm extends Component {
             body: data
         }).then(response => response.json())
         .then(response => this.props.updateToDoList(response))
+        this.setState({
+            task: "",
+            body: ""
+        })
     }
 
     handleTaskChange(e){
