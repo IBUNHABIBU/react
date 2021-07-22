@@ -31,17 +31,18 @@ const TodoItem = (props) => {
         props.deleteItem(props.item)
     }
     return (
-        <Grid container spacing={0}>
+        <Grid container spacing={3}>
             <Grid item xs={1} />
             <Grid item xs={10}>
-                <Paper elevation={1} className={classes.paper}>
+                <Paper elevation={10} className={classes.paper}>
                     <Typography
                         variant ="h4"
                         className = { classes.heading }
                     >
                         {props.item.task}
                     </Typography>
-                    <hr className={classes.divider} />
+                    <hr className={classes.divider} 
+                    style={{ marginLeft: '37.5%'}} />
                     <div className={classes.todo_body}>
                         <Typography variant="body1">
                             {props.item.body}
