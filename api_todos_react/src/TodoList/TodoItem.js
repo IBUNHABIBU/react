@@ -18,6 +18,10 @@ const useStyle = makeStyles({
     }, 
     todo_body: {
         padding: '1em',
+    }, 
+    divider: {
+        width: '25%',
+        margin: '1em'
     }
 })
 
@@ -37,11 +41,13 @@ const TodoItem = (props) => {
                     >
                         {props.item.task}
                     </Typography>
-                    <hr />
+                    <hr className={classes.divider} />
                     <div className={classes.todo_body}>
-                        {props.item.body}
+                        <Typography variant="body1">
+                            {props.item.body}
+                        </Typography>
                     </div>
-                    <hr />
+                    <hr className={classes.divider} />
                     <Button
                     variant="contained"
                     color="secondary"
