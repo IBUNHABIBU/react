@@ -9,9 +9,15 @@ const useStyle = makeStyles({
         padding: '2em',
     }, 
     paper: {
-        height: '1em',
+        height: 'auto',
         padding: '2em',
         textAlign: 'justify',
+    }, 
+    heading: {
+        textAlign: 'center',
+    }, 
+    todo_body: {
+        padding: '1em',
     }
 })
 
@@ -32,7 +38,9 @@ const TodoItem = (props) => {
                         {props.item.task}
                     </Typography>
                     <hr />
-                    {props.item.body}
+                    <div className={classes.todo_body}>
+                        {props.item.body}
+                    </div>
                     <hr />
                     <Button
                     variant="contained"
