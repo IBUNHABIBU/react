@@ -17,6 +17,7 @@ const TodoItem = (props) => {
     }
     return (
         <Grid container spacing={3}>
+            <Grid item xs={1} />
             <Grid item xs={9}>
                 <Paper elevation={1} className={classes.root}>
                     {props.item.task}

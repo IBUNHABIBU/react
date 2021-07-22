@@ -57,6 +57,7 @@ export default class TodoForm extends Component {
                                     type="text"
                                     name="todo[body]"
                                     rowsMin={3}
+                                    placeholder="describe your todo"
                                     style={{ width: '100%'}}
                                 />
                             </Grid>
