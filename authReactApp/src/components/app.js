@@ -8,7 +8,8 @@ export default class App extends Component {
     super(props)
   
     this.state = {
-       
+       loggedInStatus: 'NOT_LOGGED_IN',
+       user: {}
     }
   }
   
@@ -17,7 +18,12 @@ export default class App extends Component {
       <div className="app">
         <BrowserRouter>
           <Switch>
-            <Route exact path={"/"} component={Home} />
+            <Route 
+            exact path={"/"}
+            render={ props => (
+              <Home {...props }
+              loggedInStatus = { this.state.loggedInStatus } />
+            )} />
             <Route exact path={"/Dashboard"} component={Dashboard} />
           </Switch>
         </BrowserRouter>
