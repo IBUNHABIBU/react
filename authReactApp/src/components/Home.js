@@ -11,12 +11,17 @@ export default class Home extends Component {
         this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     }
     
+    handleSuccessfulAuth(data) {
+        // TODO update parent component
+        this.props.history.push('/dashboard')
+    }
+
     render() {
         return (
             <div>
                 <h1>Home</h1>
                 <h2>Status : { this.props.loggedInStatus }</h2>
-                <Registration />
+                <Registration handleSuccessfulAuth = {this.handleSuccessfulAuth} />
             </div>
         )
     }
