@@ -51,7 +51,7 @@ export default class Login extends Component {
                      placeholder="Password" value={this.state.password} 
                      onChange= {this.handleChange} requred />
 
-                     <button type="submit">Register</button>
+                     <button type="submit">Login</button>
                 </form>
             </div>
         )
