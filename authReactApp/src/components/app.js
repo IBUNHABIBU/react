@@ -24,7 +24,12 @@ export default class App extends Component {
               <Home {...props }
               loggedInStatus = { this.state.loggedInStatus } />
             )} />
-            <Route exact path={"/Dashboard"} component={Dashboard} />
+            <Route 
+            exact path={"/Dashboard"} 
+            render={ props => (
+              <Dashboard {...props }
+              loggedInStatus = { this.state.loggedInStatus } />
+            )} />
           </Switch>
         </BrowserRouter>
       </div>

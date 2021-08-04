@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Registration from './auth/Registration';
 
 export default class Home extends Component {
@@ -15,6 +15,7 @@ export default class Home extends Component {
             <div>
                 <h1>Home</h1>
                 <h2>Status : { this.props.loggedInStatus }</h2>
+                <Registration />
             </div>
         )
     }
