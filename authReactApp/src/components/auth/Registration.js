@@ -29,7 +29,9 @@ export default class Registration extends Component {
                 password: password,
                 password_confirmation: password_confirmation
             }
-        })
+        }, {
+            withCredentials: true 
+        }).then( response => console.log("registration", response)).catch(err => console.log("Registration err", err))
         event.preventDefault();
     }
     render() {
