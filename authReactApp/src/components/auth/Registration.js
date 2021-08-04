@@ -10,6 +10,8 @@ export default class Registration extends Component {
              password_confirmation: "",
              registrationErrors: ""
         }
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
     
     handleSubmit(event) {
@@ -21,7 +23,9 @@ export default class Registration extends Component {
             <div>
                 <h1>This is registration</h1>
                 <form onSubmit = {this.handleSubmit} action="">
-                    <input type="email" name="email" id="" placeholder="Email" />
+                    <input type="email" name="email" id="" 
+                    placeholder="Email" value={this.state.email} 
+                    onChange= {this.handleChange} />
                 </form>
             </div>
         )
