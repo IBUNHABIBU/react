@@ -13,14 +13,16 @@ export default class Registration extends Component {
     }
     
     handleSubmit(event) {
-        event.preventDefault();
         console.log(event);
+        event.preventDefault();
     }
     render() {
         return (
             <div>
                 <h1>This is registration</h1>
-                <form onSubmit = {this.handleSubmit} action=""></form>
+                <form onSubmit = {this.handleSubmit} action="">
+                    <input type="email" name="email" id="" placeholder="Email" />
+                </form>
             </div>
         )
     }
