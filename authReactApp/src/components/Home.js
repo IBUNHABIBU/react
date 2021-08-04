@@ -8,6 +8,7 @@ export default class Home extends Component {
         this.state = {
              
         }
+        this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
     }
     
     render() {
