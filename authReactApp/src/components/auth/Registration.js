@@ -14,6 +14,10 @@ export default class Registration extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
     
+    handleChange(event) {
+        console.log(event)
+    }
+
     handleSubmit(event) {
         console.log(event);
         event.preventDefault();
@@ -24,8 +28,16 @@ export default class Registration extends Component {
                 <h1>This is registration</h1>
                 <form onSubmit = {this.handleSubmit} action="">
                     <input type="email" name="email" id="" 
-                    placeholder="Email" value={this.state.email} 
-                    onChange= {this.handleChange} />
+                     placeholder="Email" value={this.state.email} 
+                     onChange= {this.handleChange} />
+
+                     <input type="password" name="password" id="" 
+                     placeholder="Password" value={this.state.email} 
+                     onChange= {this.handleChange} />
+
+                     <input type="email" name="email" id="" 
+                     placeholder="Email" value={this.state.email} 
+                     onChange= {this.handleChange} />
                 </form>
             </div>
         )
