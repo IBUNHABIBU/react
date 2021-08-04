@@ -30,11 +30,12 @@ export default class Login extends Component {
         }, {
             withCredentials: true 
         }).then( response => {
-            if(response.data.status === 'created') {
-                this.props.handleSuccessfulAuth(response.data)
-            }
+            // if(response.data.status === 'created') {
+            //     this.props.handleSuccessfulAuth(response.data)
+            // }
+            console.log(response)
         })
-        .catch(err => console.log("Registration err", err))
+        .catch(err => console.log("Login err", err))
         event.preventDefault();
     }
     render() {
