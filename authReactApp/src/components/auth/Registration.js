@@ -39,15 +39,15 @@ export default class Registration extends Component {
             <div>
                 <h1>This is registration</h1>
                 <form onSubmit = {this.handleSubmit} action="">
-                    <input type="email" name="email" id="" 
+                    <input type="email" name="email" id="email" 
                      placeholder="Email" value={this.state.email} 
                      onChange= {this.handleChange} requred />
 
-                     <input type="password" name="password" id="" 
+                     <input type="password" name="password" id="password" 
                      placeholder="Password" value={this.state.password} 
                      onChange= {this.handleChange} requred />
 
-                     <input type="password" name="password_confirmation" id="" 
+                     <input type="password" name="password_confirmation" id="confirm" 
                      placeholder="confirm password" value={this.state.password_confirmation} 
                      onChange= {this.handleChange} requred />
 
