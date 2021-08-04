@@ -22,11 +22,12 @@ export default class Registration extends Component {
     }
 
     handleSubmit(event) {
+        const { email, password, password_confirmation } = this.state;
         axios.post("http://localhost:3001/registrations", {
             user: {
-                email: this.state.email,
-                password: this.state.password,
-                password_confirmation: this.state.password_confirmation
+                email: email,
+                password: password,
+                password_confirmation: password_confirmation
             }
         })
         event.preventDefault();
