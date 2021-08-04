@@ -15,11 +15,11 @@ export default class Registration extends Component {
     }
     
     handleChange(event) {
-        console.log(event)
+        console.log(event.target.value)
     }
 
     handleSubmit(event) {
-        console.log(event);
+        console.log(event.target.value);
         event.preventDefault();
     }
     render() {
@@ -29,15 +29,15 @@ export default class Registration extends Component {
                 <form onSubmit = {this.handleSubmit} action="">
                     <input type="email" name="email" id="" 
                      placeholder="Email" value={this.state.email} 
-                     onChange= {this.handleChange} />
+                     onChange= {this.handleChange} requred />
 
                      <input type="password" name="password" id="" 
                      placeholder="Password" value={this.state.password} 
-                     onChange= {this.handleChange} />
+                     onChange= {this.handleChange} requred />
 
                      <input type="password" name="password" id="" 
                      placeholder="confirm password" value={this.state.password_confirmation} 
-                     onChange= {this.handleChange} />
+                     onChange= {this.handleChange} requred />
 
                      <button type="submit">Register</button>
                 </form>
