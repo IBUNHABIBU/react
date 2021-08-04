@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 
 export default class Registration extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class Registration extends Component {
     }
 
     handleSubmit(event) {
-        console.log(this.state);
+        axios.post("http://localhost:3001/registrations")
         event.preventDefault();
     }
     render() {
