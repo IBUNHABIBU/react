@@ -15,11 +15,13 @@ export default class Registration extends Component {
     }
     
     handleChange(event) {
-        console.log(event.target.value)
+      this.setState({
+          [event.target.name] : event.target.value
+      })
     }
 
     handleSubmit(event) {
-        console.log(event.target.value);
+        console.log(this.state);
         event.preventDefault();
     }
     render() {
@@ -35,7 +37,7 @@ export default class Registration extends Component {
                      placeholder="Password" value={this.state.password} 
                      onChange= {this.handleChange} requred />
 
-                     <input type="password" name="password" id="" 
+                     <input type="password" name="password_confirmation" id="" 
                      placeholder="confirm password" value={this.state.password_confirmation} 
                      onChange= {this.handleChange} requred />
 
