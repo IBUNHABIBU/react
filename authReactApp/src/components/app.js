@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Dashboard from './Dashboard';
+import axios from 'axios';
 
 export default class App extends Component {
   constructor(props) {
@@ -14,6 +15,10 @@ export default class App extends Component {
     this.handleLogin = this.handleLogin.bind(this);
   }
   
+  checkLoginStatus() {
+    axios.get('http://localhost:3001/logged_in')
+  }
+
   handleLogin(data) {
     this.setState({
       loggedInStatus: 'LOGGED_IN',

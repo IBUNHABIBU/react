@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import axios from 'axios';
 
 export default class Login extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              email: "",
              password: "",
@@ -13,7 +12,7 @@ export default class Login extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
-    
+
     handleChange(event) {
       this.setState({
           [event.target.name] : event.target.value
@@ -33,7 +32,6 @@ export default class Login extends Component {
             if(response.data.logged_in) {
                 this.props.handleSuccessfulAuth(response.data)
             }
-            console.log(response)
         })
         .catch(err => console.log("Login err", err))
         event.preventDefault();
