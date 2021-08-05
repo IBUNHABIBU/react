@@ -19,7 +19,10 @@ export default class Home extends Component {
         this.props.history.push('/dashboard')
     }
     handleLogoutClick() {
-        this.props.handleLogout();
+        axios.delete('http://localhost:3001/logout', { withCredentials: true })
+        .then(response => {
+            this.props.handleLogout();
+        })
     }
     render() {
         return (
