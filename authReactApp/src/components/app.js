@@ -16,7 +16,7 @@ export default class App extends Component {
   }
   
   checkLoginStatus() {
-    axios.get('http://localhost:3001/logged_in')
+    axios.get('http://localhost:3001/logged_in', { withCredentials: true })
   }
 
   handleLogin(data) {
