@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .app {
   display: flex;
   justify-content: center;
@@ -14,4 +15,22 @@
 .row {
   display: flex;
   width: 100%;
+=======
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.calc-wrapper {
+  width: 400px;
+  height: 600px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+>>>>>>> 9c553b61de21c417676afb8a054a76c222dbb73e
 }
